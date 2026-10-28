@@ -10,3 +10,8 @@ imports/**
 releases/**
 investigations/*/outputs/**
 !**/.gitkeep
+
+warehouse/snapshots/
+warehouse/datasets/
+warehouse/current.json
+btb researh new/

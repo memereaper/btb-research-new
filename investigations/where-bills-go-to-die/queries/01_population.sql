@@ -1,4 +1,3 @@
--- Example population; confirm inclusion rules with published methodology.
+-- Run through scripts/query.py so bills resolves to the active validated version.
 SELECT bill_id, congress, bill_type, bill_number, introduced_date, outcome
-FROM read_parquet('warehouse/core/bills.parquet')
-WHERE congress BETWEEN 113 AND 118;
+FROM bills WHERE congress BETWEEN 113 AND 118;

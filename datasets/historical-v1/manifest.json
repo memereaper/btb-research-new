@@ -1,0 +1,346 @@
+{
+  "snapshot_id": "historical-v1-f32385f4ada0c5c6",
+  "pipeline_version": "historical-v1",
+  "created_utc": "2026-10-28T06:19:07.080592+00:00",
+  "source_url": "https://drive.google.com/file/d/1j3lqcLMBMg-HJN3at9YJlNqh1cyzzCmm/view",
+  "source_files": [
+    {
+      "path": "data/118_published_reconciliation.csv",
+      "sha256": "2f477035250f2ac04b8c7450f40eb39f6f7c8de52537caf861626e44b4376153",
+      "bytes": 30021
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "af34044ac50b2566d5979ddac84a18f07f81ffd16e0040fd516861ddc8c47660",
+      "bytes": 4497
+    },
+    {
+      "path": "data/actions_113.csv",
+      "sha256": "5a7160f3aac8809ceb6b49e0b291b5b8d5272a0498fb016154704a59b9596e5f",
+      "bytes": 7392392
+    },
+    {
+      "path": "data/actions_114.csv",
+      "sha256": "cdf4a3ca04dfeeafff71ffa2d68537697e67330193f8e20951d6fca18ff039fa",
+      "bytes": 8984220
+    },
+    {
+      "path": "data/actions_115.csv",
+      "sha256": "37f26071d312af68717128fa020fbd9b140240bbc48ca9cc6ded3ba48661546c",
+      "bytes": 9450045
+    },
+    {
+      "path": "data/actions_116.csv",
+      "sha256": "4d7d1101018ef7caa44f3fd2f8c95eb8bdc0e375392e94ccfc5396603a28b696",
+      "bytes": 9553590
+    },
+    {
+      "path": "data/actions_117.csv",
+      "sha256": "0cd6b8af7a644ebc09f0a4ec2497482dfea6ca33459ed030f743dc8c93aa9569",
+      "bytes": 10045163
+    },
+    {
+      "path": "data/actions_118.csv",
+      "sha256": "3c7b4ebd19ec2c1855a379a00ad0f808b2b1526d5a540ef304604be8445bcce1",
+      "bytes": 10537590
+    },
+    {
+      "path": "data/bills_113.csv",
+      "sha256": "8c6bfea536f16c895564b3a950f4a848df7a6d89aeb1b4981ec677b54de413e7",
+      "bytes": 3170435
+    },
+    {
+      "path": "data/bills_114.csv",
+      "sha256": "f1828ac16847431d5766c13cb5546eda11aaaf2fef78d71e584fd9aab507933b",
+      "bytes": 3535219
+    },
+    {
+      "path": "data/bills_115.csv",
+      "sha256": "1d0b4129518fb2cc8745515b1d1ecf82d5b8ec55417be89c89473643e4b62c0a",
+      "bytes": 3916387
+    },
+    {
+      "path": "data/bills_116.csv",
+      "sha256": "6d709ea76d745af6b1894a73ab2db1b500ea4cf0bb2023c48a50996307efa62e",
+      "bytes": 4845338
+    },
+    {
+      "path": "data/bills_117.csv",
+      "sha256": "e8d3fa7ced1fc714f3a657b7ea7c72ee76928e083cf772a33e6527c000f2b4a3",
+      "bytes": 5131277
+    },
+    {
+      "path": "data/bills_118.csv",
+      "sha256": "9ac7f0ee87f999a926c5c77ddc397a8636f72d86e5eb44691c632ac3ad3a62c3",
+      "bytes": 5651098
+    },
+    {
+      "path": "data/bills_2013_2024.csv",
+      "sha256": "c0f98b770f01644fb67b72f1bc57d7d7c5dfdcd1997f0950886cae36f0c39f5e",
+      "bytes": 26247444
+    },
+    {
+      "path": "data/congress_summary.csv",
+      "sha256": "d5cc06f27031039a38c1d1784ba4017234019661487083eec4bb719ffd919b5f",
+      "bytes": 734
+    },
+    {
+      "path": "data/data_dictionary.csv",
+      "sha256": "8823b6d0f7782ad8afc24c032ade6dabfbd8ec837d5d00b67563d363af52d015",
+      "bytes": 2281
+    },
+    {
+      "path": "data/errors.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "data/quality_report.json",
+      "sha256": "cc8427307a7245213df2161817b5855fae152cf532e40f9b84f9b9ed4d947a25",
+      "bytes": 521
+    },
+    {
+      "path": "data/source_manifest.json",
+      "sha256": "54a38678bc75eab03d8069da78ecf6adee1297431dc1a17f4c2de6ac2be88dd5",
+      "bytes": 6379
+    },
+    {
+      "path": "scripts/build_historical.py",
+      "sha256": "11ab9f7f6c7bb69e71f55f9bc28567b24f7e5130034730b0508d0f10d4c95d29",
+      "bytes": 8438
+    },
+    {
+      "path": "scripts/download_archives.py",
+      "sha256": "b42e0a65adf9cfc6cd0feae8235dee75b7926ff12758287c9e37e7032b0637a4",
+      "bytes": 1133
+    },
+    {
+      "path": "scripts/package_release.py",
+      "sha256": "906fa9757e833b9c28470bd99e512d8aef113c9a52e7140917b5fae3915388bd",
+      "bytes": 7733
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "core/actions.parquet",
+      "sha256": "b3291c5c7bfeb27a51ebc74c7c4139ce867a30fab264b48cef4cdda9e5a04b0c",
+      "bytes": 21741082
+    },
+    {
+      "path": "core/bills.parquet",
+      "sha256": "dcc8856ae6fa6da21b61c51be222f22c4c650b590449962c940246132844d1a8",
+      "bytes": 1562201
+    },
+    {
+      "path": "core/historical_bill_features.parquet",
+      "sha256": "fd96cf9788f0ccfda7b9c2387c5f2b8d6cfb907315c144572287c8bb8a3a92cc",
+      "bytes": 2073201
+    },
+    {
+      "path": "core/outcomes.parquet",
+      "sha256": "ce5363ea6ef1cb997c23feb8d27df40f9787449f1a37d0cfa98f0e6da0556889",
+      "bytes": 1465
+    },
+    {
+      "path": "investigation/outcomes.csv",
+      "sha256": "51cc6c32bb655c07b23ef057d72f5a0505e790070dc21ef529f323a2968af4bc",
+      "bytes": 2522
+    },
+    {
+      "path": "investigation/outcomes.json",
+      "sha256": "8db33d847e748ebb3eaa549154143e32795a038b5910cb3296e6010205acd450",
+      "bytes": 5495
+    },
+    {
+      "path": "investigation/pre_introduction_actions.csv",
+      "sha256": "47f892ed4131182702610171b88bb5da14db2d9abb086f0b5d59d4b57cf32e4d",
+      "bytes": 174728
+    },
+    {
+      "path": "raw/data/118_published_reconciliation.csv",
+      "sha256": "2f477035250f2ac04b8c7450f40eb39f6f7c8de52537caf861626e44b4376153",
+      "bytes": 30021
+    },
+    {
+      "path": "raw/data/README.md",
+      "sha256": "af34044ac50b2566d5979ddac84a18f07f81ffd16e0040fd516861ddc8c47660",
+      "bytes": 4497
+    },
+    {
+      "path": "raw/data/actions_113.csv",
+      "sha256": "5a7160f3aac8809ceb6b49e0b291b5b8d5272a0498fb016154704a59b9596e5f",
+      "bytes": 7392392
+    },
+    {
+      "path": "raw/data/actions_114.csv",
+      "sha256": "cdf4a3ca04dfeeafff71ffa2d68537697e67330193f8e20951d6fca18ff039fa",
+      "bytes": 8984220
+    },
+    {
+      "path": "raw/data/actions_115.csv",
+      "sha256": "37f26071d312af68717128fa020fbd9b140240bbc48ca9cc6ded3ba48661546c",
+      "bytes": 9450045
+    },
+    {
+      "path": "raw/data/actions_116.csv",
+      "sha256": "4d7d1101018ef7caa44f3fd2f8c95eb8bdc0e375392e94ccfc5396603a28b696",
+      "bytes": 9553590
+    },
+    {
+      "path": "raw/data/actions_117.csv",
+      "sha256": "0cd6b8af7a644ebc09f0a4ec2497482dfea6ca33459ed030f743dc8c93aa9569",
+      "bytes": 10045163
+    },
+    {
+      "path": "raw/data/actions_118.csv",
+      "sha256": "3c7b4ebd19ec2c1855a379a00ad0f808b2b1526d5a540ef304604be8445bcce1",
+      "bytes": 10537590
+    },
+    {
+      "path": "raw/data/bills_113.csv",
+      "sha256": "8c6bfea536f16c895564b3a950f4a848df7a6d89aeb1b4981ec677b54de413e7",
+      "bytes": 3170435
+    },
+    {
+      "path": "raw/data/bills_114.csv",
+      "sha256": "f1828ac16847431d5766c13cb5546eda11aaaf2fef78d71e584fd9aab507933b",
+      "bytes": 3535219
+    },
+    {
+      "path": "raw/data/bills_115.csv",
+      "sha256": "1d0b4129518fb2cc8745515b1d1ecf82d5b8ec55417be89c89473643e4b62c0a",
+      "bytes": 3916387
+    },
+    {
+      "path": "raw/data/bills_116.csv",
+      "sha256": "6d709ea76d745af6b1894a73ab2db1b500ea4cf0bb2023c48a50996307efa62e",
+      "bytes": 4845338
+    },
+    {
+      "path": "raw/data/bills_117.csv",
+      "sha256": "e8d3fa7ced1fc714f3a657b7ea7c72ee76928e083cf772a33e6527c000f2b4a3",
+      "bytes": 5131277
+    },
+    {
+      "path": "raw/data/bills_118.csv",
+      "sha256": "9ac7f0ee87f999a926c5c77ddc397a8636f72d86e5eb44691c632ac3ad3a62c3",
+      "bytes": 5651098
+    },
+    {
+      "path": "raw/data/bills_2013_2024.csv",
+      "sha256": "c0f98b770f01644fb67b72f1bc57d7d7c5dfdcd1997f0950886cae36f0c39f5e",
+      "bytes": 26247444
+    },
+    {
+      "path": "raw/data/congress_summary.csv",
+      "sha256": "d5cc06f27031039a38c1d1784ba4017234019661487083eec4bb719ffd919b5f",
+      "bytes": 734
+    },
+    {
+      "path": "raw/data/data_dictionary.csv",
+      "sha256": "8823b6d0f7782ad8afc24c032ade6dabfbd8ec837d5d00b67563d363af52d015",
+      "bytes": 2281
+    },
+    {
+      "path": "raw/data/errors.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "raw/data/quality_report.json",
+      "sha256": "cc8427307a7245213df2161817b5855fae152cf532e40f9b84f9b9ed4d947a25",
+      "bytes": 521
+    },
+    {
+      "path": "raw/data/source_manifest.json",
+      "sha256": "54a38678bc75eab03d8069da78ecf6adee1297431dc1a17f4c2de6ac2be88dd5",
+      "bytes": 6379
+    },
+    {
+      "path": "raw/scripts/build_historical.py",
+      "sha256": "11ab9f7f6c7bb69e71f55f9bc28567b24f7e5130034730b0508d0f10d4c95d29",
+      "bytes": 8438
+    },
+    {
+      "path": "raw/scripts/download_archives.py",
+      "sha256": "b42e0a65adf9cfc6cd0feae8235dee75b7926ff12758287c9e37e7032b0637a4",
+      "bytes": 1133
+    },
+    {
+      "path": "raw/scripts/package_release.py",
+      "sha256": "906fa9757e833b9c28470bd99e512d8aef113c9a52e7140917b5fae3915388bd",
+      "bytes": 7733
+    },
+    {
+      "path": "staging/actions_113.parquet",
+      "sha256": "bb7c8e89e86bfd8a4b0663f6548fc074dc71c31a1d94cdbc27522f749f249d9a",
+      "bytes": 541108
+    },
+    {
+      "path": "staging/actions_114.parquet",
+      "sha256": "f0c2415a16a697d78d6b440531cb6db56310ddd26db9990bf8fe415317887042",
+      "bytes": 612538
+    },
+    {
+      "path": "staging/actions_115.parquet",
+      "sha256": "8bddf41ab700b860c64949cb1d45570ab8109074cc7c721e24819115f9f40753",
+      "bytes": 636553
+    },
+    {
+      "path": "staging/actions_116.parquet",
+      "sha256": "840dd788b9ab65f9b63d758875a3b86e388fe76f84c447d1a2e6d31b4b9ac7d7",
+      "bytes": 505138
+    },
+    {
+      "path": "staging/actions_117.parquet",
+      "sha256": "4b1378ae7e48a86a49dc559a1e0b33d83c3c5a9208d69779c2ff7d2ab23d22e3",
+      "bytes": 503439
+    },
+    {
+      "path": "staging/actions_118.parquet",
+      "sha256": "2ec3de26336c4ea7d9a16f0f3fdb04be73d56ef0732821311f671f119112e8e1",
+      "bytes": 532994
+    },
+    {
+      "path": "staging/bills_113.parquet",
+      "sha256": "b0e7bb2b80b99f8d39db415c84fe6ab35565111db53c273e16fdd2bad1a81834",
+      "bytes": 317328
+    },
+    {
+      "path": "staging/bills_114.parquet",
+      "sha256": "f06ac80eb57f529afbaae93fa1354ac386386a3d9e1cf9f991fd029ebb47300e",
+      "bytes": 348123
+    },
+    {
+      "path": "staging/bills_115.parquet",
+      "sha256": "81fd6b7b4b95727dd74422f84d98a69ab3b3e0f453bb8f9cdefc454a922a1c50",
+      "bytes": 376718
+    },
+    {
+      "path": "staging/bills_116.parquet",
+      "sha256": "92e27227afdc1ea6778bd2429c344769d6560487cc5265cb7c3cbe99d6b811b1",
+      "bytes": 438103
+    },
+    {
+      "path": "staging/bills_117.parquet",
+      "sha256": "2174a730a26855b5ad414f9b0b7d255428de55683ca932aac4b5834bc105e4ef",
+      "bytes": 459377
+    },
+    {
+      "path": "staging/bills_118.parquet",
+      "sha256": "e5fb3c3c309a7c7e3a3c548cff0aa57dc722ccf34c7385917cad379345f4b08f",
+      "bytes": 485323
+    },
+    {
+      "path": "validation.json",
+      "sha256": "c3f85912f4f9da02efa82acfb7656b7216ef8d143c4db546b930d6c5ae584d56",
+      "bytes": 377
+    }
+  ],
+  "scope": "113\u2013118 Congresses; HR, S, HJRES, SJRES; standardized historical reconstruction",
+  "limitations": [
+    "Source CSVs contain aggregate cosponsor counts, not individual cosponsorships; votes, amendments, committee membership and text versions are unavailable in this archive.",
+    "Rebuilt historical classification differs from original 118th publication: see raw/data/118_published_reconciliation.csv.",
+    "Raw GovInfo XML archives are referenced by upstream hashes but are not included in this source bundle."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "bills": 76867,
+    "actions": 401161
+  },
+  "reference_counts_match": true,
+  "orphan_actions": 0,
+  "pre_introduction_actions_retained": 568,
+  "missing_sponsor_ids": 11,
+  "introduction_date_range": [
+    "2013-01-03",
+    "2025-01-03"
+  ],
+  "action_date_range": [
+    "2013-01-03",
+    "2025-01-08"
+  ],
+  "duplicate_action_payloads_retained": 20598
+}

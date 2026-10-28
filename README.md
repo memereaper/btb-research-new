@@ -1,41 +1,34 @@
-# Between the Bills Research Warehouse
+# Between the Bills research pipeline
 
-A local-first research system built around DuckDB, Parquet, SQL, and Python. Read [CLAUDE.md](CLAUDE.md) before changing the data model or generating research outputs. It records the project mission, research standards, build sequence, and the rule that the live WordPress site stays untouched until Abhay reviews and approves a tested deployment.
+The original historical archive is now imported and validated locally: **76,867 measures and 401,161 action rows**, Congresses 113–118. Exact CSV sources, original parser scripts and upstream provenance are retained in immutable snapshots. No WordPress deployment occurs.
 
-## Current state
+## Rebuild
 
-This repository is a starter scaffold. The `warehouse/core/*.parquet` files are valid typed schemas with zero rows. `imports/` and `warehouse/raw/` contain no source records. The SQL and methodology under `investigations/where-bills-go-to-die/` are placeholders, not the original investigation's validated methods or findings.
-
-The first published investigation has been described as covering 76,867 bills and approximately 401,161 legislative actions from the 113th through 118th Congresses (2013–2024). Those are targets to reconcile against the original files, not verified totals in this warehouse. Do not publish the scaffold's outputs as research results.
-
-## Setup
-
-```bash
+```sh
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
+# Extract the original Drive ZIP into imports/original_historical (data/ and scripts/).
+python scripts/build_historical.py
 python scripts/validate.py
+python scripts/build_investigation.py where-bills-go-to-die
+python -m unittest discover -s tests -v
 ```
 
-To stage an original CSV without inferring or changing its values:
+Source: [historical data and methods archive](https://drive.google.com/file/d/1j3lqcLMBMg-HJN3at9YJlNqh1cyzzCmm/view). Preserve this exact archive; newly fetched GovInfo data may have changed. Raw archives stay outside Git history. The published dataset package includes its source hashes, links, normalized Parquet, outcomes, reconciliation and methods. Full rebuild requires the source ZIP; it is not downloadable by unauthenticated CI from private Drive.
 
-```bash
-python scripts/import_csv.py /path/to/original.csv
-python scripts/inspect_warehouse.py warehouse/staging/original.parquet
-```
+## Data and publication
 
-Staging preserves imported columns as text. It does not populate normalized core tables. Source-specific mappings, provenance, and checks must be implemented before core data or publication bundles are generated.
+`warehouse/current.json` points to the last verified snapshot under `warehouse/snapshots/`. Builds create a separate temporary directory and promote only after validation; failures preserve the prior pointer. Snapshot identity includes source bytes and transformation code. Rerunning unchanged inputs verifies and reuses the snapshot. Original empty `warehouse/core/` tables are retained as scaffolding; **use the promoted snapshot**, not those starter tables.
 
-## Layout
+Each snapshot has `raw/` (exact input files), `staging/` (all source columns as text plus file/row provenance), `core/` (typed bills and actions, complete historical features, outcomes), `investigation/`, a validation report and a checksummed manifest. Actions retain repeated source records. The combined bill CSV must exactly match the per-Congress CSVs. Schema, keys, references, dates and known totals fail loudly on error.
 
-- `imports/`: original downloaded files and exports, preserved as supplied
-- `warehouse/raw/`: archived source files and metadata
-- `warehouse/staging/`: lossless, text-first source copies in Parquet
-- `warehouse/core/`: normalized, validated analytical tables in Parquet
-- `sql/shared/`: reusable schema and transformation logic
-- `investigations/<slug>/queries/`: versioned investigation SQL
-- `investigations/<slug>/methodology.md`: definitions, sources, exclusions, checks, and caveats
-- `investigations/<slug>/outputs/`: generated local outputs
-- `releases/`: validated, versioned publication bundles with manifests
+Publication produces `releases/<snapshot_id>/` and a ZIP. This contains compact Parquet, CSV/JSON outcomes, methods, source notes, the original-vs-rebuilt 118th reconciliation, and checksums. `datasets/historical-v1/` is the reviewed compact Git publication copy; source archives and environments are excluded. No service needs to run continuously: execute the pipeline when inputs or methods change. Nothing automatically updates the website.
 
-Preserve raw sources and existing work. Never commit credentials or publish data without checking terms and attribution. The research pipeline must run and validate locally before any separate website integration work.
+## Research limits
+
+This is the standardized historical reconstruction, with 129 stage differences from the originally published 118th dataset. Eleven sponsor IDs are absent. There are 568 pre-introduction action rows, retained in an audit CSV; some explicitly record earlier hearings, and others need review before elapsed-time analyses. See the [methodology](investigations/where-bills-go-to-die/methodology.md). The source ZIP contains CSV extracts and original parser code, not the underlying GovInfo XML ZIPs. Their upstream hashes are retained but not independently re-downloaded and verified.
+
+[Future datasets](docs/future-datasets.md) can use the immutable CSV intake command. The cloud handoff’s **33 future investigation tables** are now staged locally and matched value-for-value against its completed Parquet outputs. Original methods and attribution are included. These extracts still require source-specific normalization and independent analytical review. See [cloud reconciliation](docs/cloud-handoff.md).
+
+Run `python scripts/verify_future.py` to check future package hashes/counts. Use `python scripts/query.py --file investigations/where-bills-go-to-die/queries/02_outcomes.sql` to query the promoted historical snapshot, or query `future_<lowercase table name>` for future staging.

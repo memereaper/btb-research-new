@@ -1,0 +1,204 @@
+{
+  "files": [
+    {
+      "path": "catalog.json",
+      "sha256": "9a87c0cec0dfc9493bf299b0c40b6776876ab03fe3287cc2decc8d4d0cb3661a",
+      "bytes": 30863
+    },
+    {
+      "path": "methods/CASE_DOSSIERS.md",
+      "sha256": "adaf019976b8c51381e146b84f3a8812f81cc4f56b956d45d9aaa4d45e473a70",
+      "bytes": 14386
+    },
+    {
+      "path": "methods/CHANGELOG.md",
+      "sha256": "17a6453fc3433d039d9c317017d994b274956683f9dabd8139a8e14b246ccd54",
+      "bytes": 1408
+    },
+    {
+      "path": "methods/DATA_LICENSE.md",
+      "sha256": "8872c5fc0943fd2e3be49ce5f57adf0171db98a533e590389aebd0642cb271ad",
+      "bytes": 1317
+    },
+    {
+      "path": "methods/DATA_SOURCES.md",
+      "sha256": "f556acab5ceb01a53a619f6cae1390f9b5fe7904ca222069749b790b6fd5803b",
+      "bytes": 3689
+    },
+    {
+      "path": "methods/README.md",
+      "sha256": "b0b6a439022b31db727a46c050597305e5fd22641fbd289446e1390fb9761374",
+      "bytes": 9636
+    },
+    {
+      "path": "methods/REPRODUCE.md",
+      "sha256": "8cc24404260293c9f1678d19565fa7345ad64d0367094cee66aa38fded90674d",
+      "bytes": 2378
+    },
+    {
+      "path": "staging/AnalyticalPairs118.parquet",
+      "sha256": "69dcf7c8703b0c5922a979f320608a5148e927a358bdbc48c7e9f4b6b991df32",
+      "bytes": 223531
+    },
+    {
+      "path": "staging/BillAnalyticalContext118.parquet",
+      "sha256": "8b728f8ff4a8846dcbaff2fe0dd5a5eb4d02665e72a61d112f582f7d1be2e0ae",
+      "bytes": 986670
+    },
+    {
+      "path": "staging/BillContext118.parquet",
+      "sha256": "6ab52317933590a3767bfadbe22acb39f421cbc3086db4f3f9a445a352d57cf0",
+      "bytes": 723583
+    },
+    {
+      "path": "staging/BillLandmarks2013_2024.parquet",
+      "sha256": "af587f75b655328ccb0c0abe1fecd61a5773430c619ee7f6e97d2a8f9521a4e1",
+      "bytes": 3477818
+    },
+    {
+      "path": "staging/BillVoteCoverage118.parquet",
+      "sha256": "9ff491638a48f8337f1544fe03e5062444e20544f0d41a5a1396cff92a0edacb",
+      "bytes": 395305
+    },
+    {
+      "path": "staging/CBOEstimateLinks118.parquet",
+      "sha256": "77092a67666a280b1eda700be812da4efcdad3d1e98e6cdd650a32114d30d203",
+      "bytes": 83579
+    },
+    {
+      "path": "staging/CaseDossiers118.parquet",
+      "sha256": "ed80fecfe10f1d371092699417acc42d1e24958101df66fbea6ba938d1cbd0c5",
+      "bytes": 9076
+    },
+    {
+      "path": "staging/CommitteeActivities118.parquet",
+      "sha256": "48ca90a4e67875d4e55dbe1f8dc96d5bf169d6c424c78eee1e21c4a9903589f3",
+      "bytes": 495190
+    },
+    {
+      "path": "staging/CommitteeMembershipSnapshots118.parquet",
+      "sha256": "bcba9d18bdc111dcafac6b719a84ae9e036d68676a9839f95a7d3e9706148271",
+      "bytes": 181875
+    },
+    {
+      "path": "staging/CommitteeReferrals118.parquet",
+      "sha256": "3f9daa9c70a0a75a4d13d54259d9dd58166e49b5a5248158f19912724ab4ab14",
+      "bytes": 277621
+    },
+    {
+      "path": "staging/CosponsorEvents118.parquet",
+      "sha256": "553379c15a1ca49cebc7e0eed7c2aeb0088fb53eac88404ba1d213a54781ad28",
+      "bytes": 1430523
+    },
+    {
+      "path": "staging/CosponsorLatestPrimaryVote118.parquet",
+      "sha256": "99e265d7b26a3601dd7e2fb87f526063da75b706d62e16963bc8a2d6d91dffab",
+      "bytes": 175036
+    },
+    {
+      "path": "staging/CosponsorTextContext118.parquet",
+      "sha256": "7238d910e21e619fb98a05f00e7d8735527113f15f1c6417246607016589ba75",
+      "bytes": 104123
+    },
+    {
+      "path": "staging/CosponsorVoteEvents118.parquet",
+      "sha256": "1a3ce3ad3f5cff3469adb6492768ba856d8d8beeb774246843ce0b8800a9dcf2",
+      "bytes": 202364
+    },
+    {
+      "path": "staging/DocumentaryEvidence118.parquet",
+      "sha256": "6c61343963391ddf5eb527e75049feca098bf68b3d31b4cc5daa99e1a951e12f",
+      "bytes": 3997
+    },
+    {
+      "path": "staging/FieldDictionary.parquet",
+      "sha256": "a34fcb009357a0585866364b95bdb43b068a30083a4a5ffb87e80818691525c7",
+      "bytes": 14178
+    },
+    {
+      "path": "staging/HistoricalLandmarkSensitivity2013_2024.parquet",
+      "sha256": "fea4d70ba01f48907593159538323b0882828b1c471029153b8255bf155b1e7f",
+      "bytes": 3394
+    },
+    {
+      "path": "staging/IdentityJoinExceptions118.parquet",
+      "sha256": "26b0b89b9d102cec47f6809ac0fac0d89adb4e98ed0c73fee53b439fcd59d54c",
+      "bytes": 1766
+    },
+    {
+      "path": "staging/MemberIdentityCrosswalk118.parquet",
+      "sha256": "d8ff1a6e06b0d07e7ef47dc7b5eba5d4dfef130d90a6ef2d9dd739897e94f9a0",
+      "bytes": 10659
+    },
+    {
+      "path": "staging/MemberServiceTerms118.parquet",
+      "sha256": "ddd75a2bc4ac05b90f883a9d402ad0a0f4f98bb5c324e9b19a094c744241db64",
+      "bytes": 21851
+    },
+    {
+      "path": "staging/OfficialMemberVotesRejoined118.parquet",
+      "sha256": "eaddb4fb6d74f3a83a833f5c05ce60598f0e4fb4e200bb5c1636e4a8b681c361",
+      "bytes": 734985
+    },
+    {
+      "path": "staging/PartyLabelDateAudit118.parquet",
+      "sha256": "b0b1615588fa50f67ed6f9fa21689ccb062f2ce618960bf4c9b6a6db0fe86777",
+      "bytes": 1585
+    },
+    {
+      "path": "staging/RelatedBillOutcomes118.parquet",
+      "sha256": "7701201b7f188118829593fa4ab135bc21ce7760aca51b908ea3c9822db345a3",
+      "bytes": 379877
+    },
+    {
+      "path": "staging/RelatedBills118.parquet",
+      "sha256": "b0c1a2a1089b7573c6a3af6123e48740ade64cc107df493801224e5cd3424d92",
+      "bytes": 371799
+    },
+    {
+      "path": "staging/RetentionSensitivity118.parquet",
+      "sha256": "6d0779f30a7a92a26086799e88e78eea00824779eef3c378a0ede85159c83534",
+      "bytes": 3863
+    },
+    {
+      "path": "staging/RollCallReferences118.parquet",
+      "sha256": "2a581d4fc8e02a99bf36bb5ca13e603f929e1b3d7ce8787b148979bf7be78fcf",
+      "bytes": 34473
+    },
+    {
+      "path": "staging/SourceManifest.parquet",
+      "sha256": "c435fb9c475e0168906a3bdc9c7d35d49778862c9393e5f4aa4c827e5288c595",
+      "bytes": 138654
+    },
+    {
+      "path": "staging/TableCatalog.parquet",
+      "sha256": "41eb500b01b536c3bbcb9035e34f494291152a3c33481710f22aa262f7a97a00",
+      "bytes": 6350
+    },
+    {
+      "path": "staging/TextComparisons118.parquet",
+      "sha256": "5d48c8cca51c4ab280d6d637612f6e29415715b2ee6ac0b979ae841a61fdcf32",
+      "bytes": 117172
+    },
+    {
+      "path": "staging/TextVersionCatalog118.parquet",
+      "sha256": "2b0c80d8b2e31043c4e6f89d9f94575ff15fbc84c123852f52ecc1228bf5626b",
+      "bytes": 414636
+    },
+    {
+      "path": "staging/TextVersionMetrics118.parquet",
+      "sha256": "363221e68fa5bfb552e549d99f2964233928001fb4bd24e38238f7b69f947382",
+      "bytes": 126952
+    },
+    {
+      "path": "staging/VotePurposeAndCoalitions118.parquet",
+      "sha256": "e3028b079d571dd98fa7cb8c5e64b4115ad3848eef00bb6dee0492b2c07bfc6e",
+      "bytes": 46721
+    },
+    {
+      "path": "staging/WithinBillVoteComparisons118.parquet",
+      "sha256": "2b6f714530490a49e5884a6833a6613d673363a322f48b0203318e28e6b6dc2e",
+      "bytes": 5234
+    }
+  ]
+}

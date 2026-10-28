@@ -1,0 +1,40 @@
+congress,outcome,bill_count,percent
+113,Became law,296,3.2588351866123526
+113,"Committee activity, no full committee report or discharge",479,5.273588021578774
+113,No recorded committee progress or chamber passage,7411,81.59198502697346
+113,"Passed both chambers, not enacted",2,0.02201915666629968
+113,Passed one chamber,464,5.108444346581526
+113,"Reported by full committee or discharged, no chamber passage",431,4.745128261587581
+114,Became law,329,3.218233395285141
+114,"Committee activity, no full committee report or discharge",525,5.135478822263523
+114,No recorded committee progress or chamber passage,8177,79.9863053898073
+114,"Passed both chambers, not enacted",8,0.07825491538687274
+114,Passed one chamber,633,6.1919201799863055
+114,"Reported by full committee or discharged, no chamber passage",542,5.3017705174606276
+114,Vetoed,9,0.08803677981023184
+115,Became law,443,3.8811985281233574
+115,"Committee activity, no full committee report or discharge",418,3.6621692658139127
+115,No recorded committee progress or chamber passage,9123,79.9281584019625
+115,"Passed both chambers, not enacted",9,0.07885053443140004
+115,Passed one chamber,843,7.38566672507447
+115,"Reported by full committee or discharged, no chamber passage",578,5.063956544594358
+116,Became law,344,2.398884239888424
+116,"Committee activity, no full committee report or discharge",514,3.584379358437936
+116,No recorded committee progress or chamber passage,12244,85.38354253835425
+116,"Passed both chambers, not enacted",9,0.06276150627615062
+116,Passed one chamber,723,5.041841004184101
+116,"Reported by full committee or discharged, no chamber passage",497,3.465829846582985
+116,Vetoed,9,0.06276150627615062
+117,Became law,365,2.3946988584175304
+117,"Committee activity, no full committee report or discharge",761,4.992783099330796
+117,No recorded committee progress or chamber passage,13017,85.40217819183835
+117,"Passed both chambers, not enacted",4,0.02624327516074006
+117,Passed one chamber,637,4.179241569347854
+117,"Reported by full committee or discharged, no chamber passage",458,3.0048550059047368
+118,Became law,274,1.6540899486869907
+118,"Committee activity, no full committee report or discharge",575,3.4711741623905827
+118,No recorded committee progress or chamber passage,14220,85.84364624207667
+118,"Passed both chambers, not enacted",3,0.018110473890733475
+118,Passed one chamber,672,4.056746151524298
+118,"Reported by full committee or discharged, no chamber passage",808,4.877754301237549
+118,Vetoed,13,0.07847872019317839

@@ -8,7 +8,7 @@ Build a reproducible, free, local-first research data system for Between the Bil
 
 The first published investigation, “Where Do Bills Go to Die?”, has been described as covering 76,867 bills and approximately 401,161 legislative actions from the 113th through 118th Congresses (2013–2024). Treat those as reported target totals, not verified warehouse counts. Reproduce and document them from the original source files before using them as validated results. Do not silently substitute newly downloaded data for the source records behind the published study. Preserve the raw inputs and their provenance, compute hashes, record retrieval dates and source versions, and document any corrections or changed inclusion rules.
 
-The current starter warehouse has 13 typed, zero-row Parquet tables. There are no original source datasets in `imports/` or `warehouse/raw/` yet. The existing outcome SQL and investigation methodology are scaffolding, not the original published study's validated methodology. Never describe the empty tables or starter query as completed research.
+The original 13 empty starter tables are preserved. The historical pipeline now uses immutable warehouse/snapshots directories and warehouse/current.json. Verified local imports contain 76,867 bills and 401,161 actions. The 33 future investigation tables have also been recovered from the cloud handoff, staged locally, and matched to cloud outputs; their findings are not independently recertified. Read README.md and the versioned methodology for source limitations and the 118th classification reconciliation. Never confuse empty starter tables with promoted snapshots.
 
 ## What good work looks like
 

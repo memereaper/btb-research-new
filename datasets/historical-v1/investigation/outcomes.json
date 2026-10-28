@@ -1,0 +1,236 @@
+[
+  {
+    "congress": 113,
+    "outcome": "Became law",
+    "bill_count": 296,
+    "percent": 3.2588351866123526
+  },
+  {
+    "congress": 113,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 479,
+    "percent": 5.273588021578774
+  },
+  {
+    "congress": 113,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 7411,
+    "percent": 81.59198502697346
+  },
+  {
+    "congress": 113,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 2,
+    "percent": 0.02201915666629968
+  },
+  {
+    "congress": 113,
+    "outcome": "Passed one chamber",
+    "bill_count": 464,
+    "percent": 5.108444346581526
+  },
+  {
+    "congress": 113,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 431,
+    "percent": 4.745128261587581
+  },
+  {
+    "congress": 114,
+    "outcome": "Became law",
+    "bill_count": 329,
+    "percent": 3.218233395285141
+  },
+  {
+    "congress": 114,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 525,
+    "percent": 5.135478822263523
+  },
+  {
+    "congress": 114,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 8177,
+    "percent": 79.9863053898073
+  },
+  {
+    "congress": 114,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 8,
+    "percent": 0.07825491538687274
+  },
+  {
+    "congress": 114,
+    "outcome": "Passed one chamber",
+    "bill_count": 633,
+    "percent": 6.1919201799863055
+  },
+  {
+    "congress": 114,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 542,
+    "percent": 5.3017705174606276
+  },
+  {
+    "congress": 114,
+    "outcome": "Vetoed",
+    "bill_count": 9,
+    "percent": 0.08803677981023184
+  },
+  {
+    "congress": 115,
+    "outcome": "Became law",
+    "bill_count": 443,
+    "percent": 3.8811985281233574
+  },
+  {
+    "congress": 115,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 418,
+    "percent": 3.6621692658139127
+  },
+  {
+    "congress": 115,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 9123,
+    "percent": 79.9281584019625
+  },
+  {
+    "congress": 115,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 9,
+    "percent": 0.07885053443140004
+  },
+  {
+    "congress": 115,
+    "outcome": "Passed one chamber",
+    "bill_count": 843,
+    "percent": 7.38566672507447
+  },
+  {
+    "congress": 115,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 578,
+    "percent": 5.063956544594358
+  },
+  {
+    "congress": 116,
+    "outcome": "Became law",
+    "bill_count": 344,
+    "percent": 2.398884239888424
+  },
+  {
+    "congress": 116,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 514,
+    "percent": 3.584379358437936
+  },
+  {
+    "congress": 116,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 12244,
+    "percent": 85.38354253835425
+  },
+  {
+    "congress": 116,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 9,
+    "percent": 0.06276150627615062
+  },
+  {
+    "congress": 116,
+    "outcome": "Passed one chamber",
+    "bill_count": 723,
+    "percent": 5.041841004184101
+  },
+  {
+    "congress": 116,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 497,
+    "percent": 3.465829846582985
+  },
+  {
+    "congress": 116,
+    "outcome": "Vetoed",
+    "bill_count": 9,
+    "percent": 0.06276150627615062
+  },
+  {
+    "congress": 117,
+    "outcome": "Became law",
+    "bill_count": 365,
+    "percent": 2.3946988584175304
+  },
+  {
+    "congress": 117,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 761,
+    "percent": 4.992783099330796
+  },
+  {
+    "congress": 117,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 13017,
+    "percent": 85.40217819183835
+  },
+  {
+    "congress": 117,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 4,
+    "percent": 0.02624327516074006
+  },
+  {
+    "congress": 117,
+    "outcome": "Passed one chamber",
+    "bill_count": 637,
+    "percent": 4.179241569347854
+  },
+  {
+    "congress": 117,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 458,
+    "percent": 3.0048550059047368
+  },
+  {
+    "congress": 118,
+    "outcome": "Became law",
+    "bill_count": 274,
+    "percent": 1.6540899486869907
+  },
+  {
+    "congress": 118,
+    "outcome": "Committee activity, no full committee report or discharge",
+    "bill_count": 575,
+    "percent": 3.4711741623905827
+  },
+  {
+    "congress": 118,
+    "outcome": "No recorded committee progress or chamber passage",
+    "bill_count": 14220,
+    "percent": 85.84364624207667
+  },
+  {
+    "congress": 118,
+    "outcome": "Passed both chambers, not enacted",
+    "bill_count": 3,
+    "percent": 0.018110473890733475
+  },
+  {
+    "congress": 118,
+    "outcome": "Passed one chamber",
+    "bill_count": 672,
+    "percent": 4.056746151524298
+  },
+  {
+    "congress": 118,
+    "outcome": "Reported by full committee or discharged, no chamber passage",
+    "bill_count": 808,
+    "percent": 4.877754301237549
+  },
+  {
+    "congress": 118,
+    "outcome": "Vetoed",
+    "bill_count": 13,
+    "percent": 0.07847872019317839
+  }
+]
