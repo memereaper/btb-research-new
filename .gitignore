@@ -15,3 +15,6 @@ warehouse/snapshots/
 warehouse/datasets/
 warehouse/current.json
 btb researh new/
+
+warehouse/collection-cache/
+work/

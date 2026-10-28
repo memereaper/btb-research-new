@@ -40,3 +40,7 @@ The public site uses a custom WordPress theme and Explore plugin. Preserve every
 ## Handoff and communication
 
 Before substantial changes, inspect the current repository and explain what is already present. Keep this file and the README aligned with the implementation. Report what is implemented, what data was actually ingested, validation evidence, unresolved source needs, and the next concrete step. Clearly distinguish verified results from targets, assumptions, and proposed analyses. Do not invent impact numbers, prestige, uniqueness, or claims about college admissions.
+
+## Expanded collection status
+
+Read docs/collections/inventory.md and methods.md. Twenty-one new tables were acquired/derived from official GovInfo and House records plus a pinned CC0 member crosswalk. Original releases remain untouched. Research leads are candidate reintroductions, source-aware cosponsor/vote observations, and unreviewed passage matches. Keep ongoing 119th outcomes separate from completed Congresses. No claim of novelty, largest size, verified policy survival or admissions outcome follows from record counts. Data collection does not deploy anything. The user subsequently authorized a separate, tested WordPress performance-optimization phase preserving appearance and functionality; this does not authorize unrelated publication or redesign.

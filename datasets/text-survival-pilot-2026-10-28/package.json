@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "catalog.json",
+      "bytes": 89354,
+      "sha256": "5d68319e8d42296c3383fd0c6d3b5d62eedcb5270cbf15eb0833098b6df2977e"
+    },
+    {
+      "path": "tables/passage_candidates.parquet",
+      "bytes": 4116,
+      "sha256": "81974a14eac99d1c6076d3c86baf61596c5413960f4123038bda56d6441d5b37"
+    },
+    {
+      "path": "tables/text_pairs.parquet",
+      "bytes": 2971,
+      "sha256": "ad6eb3d22513ca020d0d20b5f4f76ba29786ba507a54fc92a0731d4851fd361b"
+    },
+    {
+      "path": "tables/text_sections.parquet",
+      "bytes": 1231806,
+      "sha256": "42ff8422ff17d53a45210a0fee4ec0ae19d73063be8664d0f6faf317e3e21a18"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 152,
+      "sha256": "f04fa878f512af2ae8a7d5262d2ab8cbdc7b8ec413ea2a814ebad90f5f12d29e"
+    }
+  ]
+}

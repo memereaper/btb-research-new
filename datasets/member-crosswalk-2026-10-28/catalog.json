@@ -1,0 +1,80 @@
+{
+  "source_type": "Community-maintained crosswalk, not an official government identity assignment. CC0-1.0.",
+  "commit": "15530b7d621009eb5fc7eda67f75194d7d91f8c1",
+  "tables": [
+    {
+      "table": "member_identifiers",
+      "rows": 97319,
+      "fields": [
+        "member_id",
+        "identifier_scheme",
+        "identifier",
+        "source_id"
+      ]
+    },
+    {
+      "table": "member_terms",
+      "rows": 45535,
+      "fields": [
+        "member_id",
+        "term_ordinal",
+        "chamber",
+        "start_date",
+        "end_date",
+        "state",
+        "district",
+        "party",
+        "senate_class",
+        "senate_rank",
+        "party_affiliations_json",
+        "source_id"
+      ]
+    },
+    {
+      "table": "members",
+      "rows": 12770,
+      "fields": [
+        "member_id",
+        "first_name",
+        "middle_name",
+        "last_name",
+        "official_full_name",
+        "birthday",
+        "gender_source",
+        "source_file",
+        "source_id"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://api.github.com/repos/unitedstates/congress-legislators/commits/main",
+      "retrieved_utc": "2026-10-28T06:39:54.548603+00:00",
+      "sha256": "c8a1effde03f24567a3f844811405f860f118c3f5d7504d9cd9da05aefde543f",
+      "bytes": 16588,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:39:54 GMT\ncontent-type: application/json; charset=utf-8\ncache-control: public, max-age=60, s-maxage=60\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\netag: W/\"1c53db82a5428dbfd1c804dad1991d953493a0529a42c1585975ac11feccac65\"\nlast-modified: Sat, 24 Oct 2026 11:56:43 GMT\nx-github-media-type: github.v3; format=json\nx-github-api-version-selected: 2022-11-28\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\naccess-control-allow-origin: *\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\nx-frame-options: deny\nx-content-type-options: nosniff\nx-xss-protection: 0\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\ncontent-security-policy: default-src 'none'\nserver: github.com\naccept-ranges: bytes\nx-ratelimit-limit: 60\nx-ratelimit-remaining: 58\nx-ratelimit-used: 2\nx-ratelimit-resource: core\nx-ratelimit-reset: 1793172933\ncontent-length: 16588\nx-github-request-id: D064:A6D16:643C373:147A7C5C:6AE198BA\nx-github-edge-region: iad\n\n"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/15530b7d621009eb5fc7eda67f75194d7d91f8c1/legislators-historical.yaml",
+      "retrieved_utc": "2026-10-28T06:39:55.444217+00:00",
+      "sha256": "ea7a1e35e7854418033b155420b522d3cefffc9763b67d7044cde45b8e49a355",
+      "bytes": 8997407,
+      "response_headers": "HTTP/2 200 \ncache-control: max-age=300\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\ncontent-type: text/plain; charset=utf-8\netag: \"94e87e2e82fbe76667d8df37db9c9cfddd8edef52f6fbd04b3f9a3fb510c78cb\"\nstrict-transport-security: max-age=31536000\nx-content-type-options: nosniff\nx-frame-options: deny\nx-xss-protection: 1; mode=block\nx-github-request-id: 5F66:2A9956:315117:4810E0:6AE198B9\nx-github-edge-region: iad\naccept-ranges: bytes\ndate: Wed, 28 Oct 2026 06:39:55 GMT\nvia: 1.1 varnish\nx-served-by: cache-dfw-kdal2120050-DFW\nx-cache: MISS\nx-cache-hits: 0\nx-timer: S1793169595.743096,VS0,VE382\nvary: Authorization,Accept-Encoding\naccess-control-allow-origin: *\ncross-origin-resource-policy: cross-origin\nx-fastly-request-id: 99287a3f53c7612afcf4e5701a660063268a8c8d\nexpires: Wed, 28 Oct 2026 06:44:55 GMT\nsource-age: 0\ncontent-length: 8997407\n\n"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/15530b7d621009eb5fc7eda67f75194d7d91f8c1/legislators-current.yaml",
+      "retrieved_utc": "2026-10-28T06:40:06.727297+00:00",
+      "sha256": "fcd8e7f3b8b8286d99056a2be95907c7f6bce4d2dce069a074aa2f6970ecc717",
+      "bytes": 1081187,
+      "response_headers": "HTTP/2 200 \ncache-control: max-age=300\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\ncontent-type: text/plain; charset=utf-8\netag: \"a5a4a9c8073682c80ae57d87bb0b84a7208ff448fc9f0890afe4cc9e42936551\"\nstrict-transport-security: max-age=31536000\nx-content-type-options: nosniff\nx-frame-options: deny\nx-xss-protection: 1; mode=block\nx-github-request-id: 2F44:3DC260:2D6C59:34D229:6AE198C6\nx-github-edge-region: iad\naccept-ranges: bytes\ndate: Wed, 28 Oct 2026 06:40:06 GMT\nvia: 1.1 varnish\nx-served-by: cache-dfw-kdal2120122-DFW\nx-cache: MISS\nx-cache-hits: 0\nx-timer: S1793169607.606871,VS0,VE159\nvary: Authorization,Accept-Encoding\naccess-control-allow-origin: *\ncross-origin-resource-policy: cross-origin\nx-fastly-request-id: baee9cf2c4a492b3474fdd6a9c81350ec1927e6d\nexpires: Wed, 28 Oct 2026 06:45:06 GMT\nsource-age: 0\ncontent-length: 1081187\n\n"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/15530b7d621009eb5fc7eda67f75194d7d91f8c1/LICENSE",
+      "retrieved_utc": "2026-10-28T06:40:08.050197+00:00",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "response_headers": "HTTP/2 200 \ncache-control: max-age=300\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\ncontent-type: text/plain; charset=utf-8\netag: \"9d3fb2fa8cac7a8827d7cf7e62d6af81f1ffbb3fddb4d270334afebee9e1fc66\"\nstrict-transport-security: max-age=31536000\nx-content-type-options: nosniff\nx-frame-options: deny\nx-xss-protection: 1; mode=block\nx-github-request-id: 3C32:220554:2EADF9:36135C:6AE198C7\nx-github-edge-region: iad\naccept-ranges: bytes\ndate: Wed, 28 Oct 2026 06:40:08 GMT\nvia: 1.1 varnish\nx-served-by: cache-dfw-kdfw8210113-DFW\nx-cache: MISS\nx-cache-hits: 0\nx-timer: S1793169608.065302,VS0,VE97\nvary: Authorization,Accept-Encoding\naccess-control-allow-origin: *\ncross-origin-resource-policy: cross-origin\nx-fastly-request-id: d36e829163b3aa1a5e766a8a92ba94e724ff6c26\nexpires: Wed, 28 Oct 2026 06:45:08 GMT\nsource-age: 0\ncontent-length: 7048\n\n"
+    }
+  ],
+  "limitations": "Identifier arrays can contain multiple IDs (including FEC candidates by office). Do not join by name; check candidate office/cycle and dated service. Listed term end dates can include source-specific conventions; use dates and original party affiliations explicitly."
+}

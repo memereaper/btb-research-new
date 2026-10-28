@@ -32,3 +32,25 @@ This is the standardized historical reconstruction, with 129 stage differences f
 [Future datasets](docs/future-datasets.md) can use the immutable CSV intake command. The cloud handoff’s **33 future investigation tables** are now staged locally and matched value-for-value against its completed Parquet outputs. Original methods and attribution are included. These extracts still require source-specific normalization and independent analytical review. See [cloud reconciliation](docs/cloud-handoff.md).
 
 Run `python scripts/verify_future.py` to check future package hashes/counts. Use `python scripts/query.py --file investigations/where-bills-go-to-die/queries/02_outcomes.sql` to query the promoted historical snapshot, or query `future_<lowercase table name>` for future staging.
+
+## Expanded pathways collection — October 28, 2026
+
+New public-source packages add 21 tables: full 118/119 HR/S/HJRES/SJRES bill status, dated cosponsors, committee events, official relationships, text/CBO links, 275 bill-linked 2024 House votes, a pinned historical member crosswalk, and an explicit text-survival pilot. See [acquired inventory](docs/collections/inventory.md), [methods and prior-research priorities](docs/collections/methods.md) and [field missingness](docs/collections/field-completeness.csv). Existing historical/future releases are preserved.
+
+```sh
+python scripts/verify_collections.py --raw
+python scripts/query_collections.py --sql 'SELECT later_congress,count(*) FROM research_reintroduction_candidates GROUP BY later_congress ORDER BY later_congress'
+```
+
+Reproduce using cached immutable source snapshots (run in this order in a clean output location; existing dated packages deliberately refuse replacement):
+
+```sh
+python scripts/collect_pathways.py --congress 118 119 --output datasets/pathways-2026-10-28
+python scripts/collect_house_votes.py
+python scripts/collect_members.py
+python scripts/collect_text_pilot.py
+python scripts/build_pathway_research.py
+python scripts/write_collection_inventory.py
+```
+
+The collectors accept `--output` for a separately named snapshot; House/text collectors also accept `--status` to select the input status release. `--refresh` refetches source URLs and retains old content objects. Research SQL and package mappings are deliberately frozen to this release; review them explicitly for another scope. Offline CI verifies published data; collection does not run automatically on every push. New source tables retain string fields, with explicit typed comparisons in research SQL. Raw official XML/ZIP/YAML objects remain in the ignored local collection cache. The 119th is ongoing, recurrence/text matches are unverified candidates, and absence is never silently converted to opposition.

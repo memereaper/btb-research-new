@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 6713,
+      "sha256": "d6a95e299af1945e461b81bd2af64b7ff03f544f976897ac56657fdb7c0b581a"
+    },
+    {
+      "path": "tables/member_identifiers.parquet",
+      "bytes": 504645,
+      "sha256": "f3ede3907f033f1e0d4e61abb2857fdb48df34302064a8c820da3947b80e97bd"
+    },
+    {
+      "path": "tables/member_terms.parquet",
+      "bytes": 187435,
+      "sha256": "e18f7f21c20d27781c20e4c67cbc674790af861de10da9a4930e3f3c72206d86"
+    },
+    {
+      "path": "tables/members.parquet",
+      "bytes": 176369,
+      "sha256": "33d4e8adf4a1d116e9f6b514f6c15190fa5a6779600aa15ca67a9c9ba722e103"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 118,
+      "sha256": "080e2b7aae19321b9fc3eeb2c85301bb788f37bff609aba40ebe305346af92dc"
+    }
+  ]
+}

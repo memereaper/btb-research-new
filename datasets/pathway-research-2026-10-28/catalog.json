@@ -1,0 +1,64 @@
+{
+  "tables": [
+    {
+      "table": "reintroduction_candidates",
+      "rows": 9104,
+      "fields": [
+        "earlier_bill_id",
+        "later_bill_id",
+        "earlier_congress",
+        "later_congress",
+        "earlier_title",
+        "later_title",
+        "sponsor_id",
+        "earlier_introduced",
+        "later_introduced",
+        "earlier_source",
+        "later_source",
+        "candidate_rule"
+      ],
+      "sql_sha256": "012cfd8266d87dd3af86054ea2f8c6c0752c0263ae7a25c746d3eeed9b97ea8f"
+    },
+    {
+      "table": "cosponsor_vote_observations",
+      "rows": 4743,
+      "fields": [
+        "bill_id",
+        "vote_id",
+        "vote_date",
+        "question",
+        "vote_type",
+        "result",
+        "amendment_number",
+        "member_id",
+        "position",
+        "official_vote_party",
+        "source_cosponsor_party",
+        "joined_date",
+        "withdrawn_date",
+        "is_original",
+        "bill_sponsor_id",
+        "source_bill_sponsor_party",
+        "source_strict_dr_crossparty",
+        "timing_status",
+        "vote_source_url",
+        "cosponsor_source_id",
+        "cosponsor_source_member",
+        "vote_source_id"
+      ],
+      "sql_sha256": "b1c42acc2578eb220f65f3a12235683c28265b4fc2e55562892ce14b4a58889c"
+    }
+  ],
+  "input_package_sha256": {
+    "pathways-2026-10-28": "2cf1f913d16c3d5d64801480c10a0a08c2ad67ed0958af0a7906b06ac12d37fb",
+    "house-2024-pathway-votes": "a7d3114db86040399ec8095d48ace32b6850f1dc53adc6b0496328cc92566be6",
+    "member-crosswalk-2026-10-28": "f21e608d0b2c2fb46fcf5e5efb4e4fa944ba6aa21f6d54b8827b2ee61196c43f"
+  },
+  "original_historical_features_sha256": "fd96cf9788f0ccfda7b9c2387c5f2b8d6cfb907315c144572287c8bb8a3a92cc",
+  "limitations": [
+    "Recurrence candidates are title/sponsor rules; titles can be generic and similarity is not proof of policy identity.",
+    "Cosponsor observations cover only acquired 2024 House bill-linked votes, not every vote, every cosponsor or the Senate.",
+    "Date-only same-day order is ambiguous; source party labels are retained, not backfilled as historical affiliations.",
+    "Committee activity and text matches do not identify causation."
+  ]
+}

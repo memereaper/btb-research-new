@@ -1,0 +1,289 @@
+{
+  "scope": {
+    "118-hr": 10564,
+    "118-s": 5649,
+    "118-hjres": 230,
+    "118-sjres": 122,
+    "119-hr": 10911,
+    "119-s": 5674,
+    "119-hjres": 220,
+    "119-sjres": 221
+  },
+  "tables": [
+    {
+      "table": "actions",
+      "rows": 148049,
+      "fields": [
+        "action_id",
+        "bill_id",
+        "action_date",
+        "action_time",
+        "action_code",
+        "action_type",
+        "action_text",
+        "source_system",
+        "source_order",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "bills",
+      "rows": 33591,
+      "fields": [
+        "bill_id",
+        "congress",
+        "bill_type",
+        "bill_number",
+        "title",
+        "introduced_date",
+        "updated_at",
+        "updated_including_text",
+        "origin_chamber",
+        "policy_area",
+        "sponsor_id",
+        "sponsor_name",
+        "sponsor_party",
+        "sponsor_state",
+        "sponsor_district",
+        "latest_action_date",
+        "latest_action_text",
+        "law_identifiers",
+        "congress_url",
+        "source_xml_url",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "cbo_estimates",
+      "rows": 2700,
+      "fields": [
+        "bill_id",
+        "title",
+        "publication_date",
+        "url",
+        "description",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "committee_events",
+      "rows": 61752,
+      "fields": [
+        "bill_id",
+        "committee_id",
+        "parent_committee_id",
+        "event_name",
+        "event_date",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "committees",
+      "rows": 42844,
+      "fields": [
+        "bill_id",
+        "committee_id",
+        "committee_name",
+        "chamber",
+        "committee_type",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "cosponsors",
+      "rows": 323226,
+      "fields": [
+        "bill_id",
+        "sponsor_id",
+        "member_name",
+        "party",
+        "state",
+        "district",
+        "joined_date",
+        "withdrawn_date",
+        "is_original",
+        "source_row",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "related_bills",
+      "rows": 25460,
+      "fields": [
+        "bill_id",
+        "related_bill_id",
+        "relationship",
+        "identified_by",
+        "latest_action_date",
+        "latest_action_text",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "subjects",
+      "rows": 88400,
+      "fields": [
+        "bill_id",
+        "subject",
+        "updated_at",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "summaries",
+      "rows": 16507,
+      "fields": [
+        "bill_id",
+        "action_date",
+        "action_description",
+        "version_code",
+        "updated_at",
+        "summary_html",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "text_versions",
+      "rows": 40472,
+      "fields": [
+        "bill_id",
+        "version_type",
+        "version_date",
+        "format_type",
+        "url",
+        "is_errata",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    },
+    {
+      "table": "vote_references",
+      "rows": 2029,
+      "fields": [
+        "bill_id",
+        "action_id",
+        "chamber",
+        "congress",
+        "session",
+        "roll_number",
+        "vote_date",
+        "url",
+        "source_row",
+        "source_id",
+        "source_member",
+        "source_record_sha256"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hr/BILLSTATUS-118-hr.zip",
+      "retrieved_utc": "2026-10-28T06:37:40.271616+00:00",
+      "sha256": "8e7ca7dab50a7b9b977f021ec1b3231f8fedf82c33494553857b892fadfdba98",
+      "bytes": 35522726,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:37:20 GMT\ncontent-type: application/zip\ncontent-length: 35522726\nserver: cloudflare\nlast-modified: Fri, 15 May 2026 20:20:26 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517ee6c1e2925bf-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 118,
+      "bill_type": "hr",
+      "xml_members": 10564
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/s/BILLSTATUS-118-s.zip",
+      "retrieved_utc": "2026-10-28T06:37:48.993970+00:00",
+      "sha256": "b883c7e54eb48cebacfb9e847293bd9e3a840e81bbff0575ac178840fd4d95d8",
+      "bytes": 14414272,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:37:41 GMT\ncontent-type: application/zip\ncontent-length: 14414272\nserver: cloudflare\nlast-modified: Tue, 20 Oct 2026 16:08:10 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517eeeb7f6d1510-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 118,
+      "bill_type": "s",
+      "xml_members": 5649
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/hjres/BILLSTATUS-118-hjres.zip",
+      "retrieved_utc": "2026-10-28T06:37:50.160237+00:00",
+      "sha256": "010db05723a7ae43db92455f0415d9ce5c4be3a89feac56bbbd2a78da4a2af83",
+      "bytes": 819266,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:37:49 GMT\ncontent-type: application/zip\ncontent-length: 819266\nserver: cloudflare\nlast-modified: Tue, 27 Jan 2026 16:34:11 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517ef21ed6ef825-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 118,
+      "bill_type": "hjres",
+      "xml_members": 230
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/118/sjres/BILLSTATUS-118-sjres.zip",
+      "retrieved_utc": "2026-10-28T06:37:51.144831+00:00",
+      "sha256": "da94d59404d5eba1e35939ecc276d012fc56c2b1171a3467fc89456cf9c28569",
+      "bytes": 344680,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:37:51 GMT\ncontent-type: application/zip\ncontent-length: 344680\nserver: cloudflare\nlast-modified: Tue, 27 Jan 2026 16:34:15 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517ef295c58d811-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 118,
+      "bill_type": "sjres",
+      "xml_members": 122
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119-hr.zip",
+      "retrieved_utc": "2026-10-28T06:38:10.280220+00:00",
+      "sha256": "337bc0b3cc93888d1b29281d5b3c1dbcbd80f90a8e5c0a33a185c7343d7b2541",
+      "bytes": 32988485,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:37:52 GMT\ncontent-type: application/zip\ncontent-length: 32988485\nserver: cloudflare\nlast-modified: Wed, 28 Oct 2026 00:23:44 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517ef3018baf078-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 119,
+      "bill_type": "hr",
+      "xml_members": 10911
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/s/BILLSTATUS-119-s.zip",
+      "retrieved_utc": "2026-10-28T06:38:18.525156+00:00",
+      "sha256": "25fc851509d335f58a37e821079119ec9d72da5a1aecb04b06c61026f78b6d5a",
+      "bytes": 13491395,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:38:11 GMT\ncontent-type: application/zip\ncontent-length: 13491395\nserver: cloudflare\nlast-modified: Wed, 28 Oct 2026 00:23:49 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517efa759082e5a-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 119,
+      "bill_type": "s",
+      "xml_members": 5674
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hjres/BILLSTATUS-119-hjres.zip",
+      "retrieved_utc": "2026-10-28T06:38:19.665552+00:00",
+      "sha256": "6a1af66a8c89d377d107c89117cfec07370bbd70ea2273fa5b5802485aae95f2",
+      "bytes": 679208,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:38:19 GMT\ncontent-type: application/zip\ncontent-length: 679208\nserver: cloudflare\nlast-modified: Wed, 28 Oct 2026 00:23:44 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517efda6fcbd8c0-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 119,
+      "bill_type": "hjres",
+      "xml_members": 220
+    },
+    {
+      "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS/119/sjres/BILLSTATUS-119-sjres.zip",
+      "retrieved_utc": "2026-10-28T06:38:20.767281+00:00",
+      "sha256": "c63e21740763daedeaa1a69aa1465f337bab85cbd4d65b19719dd2c9b56ec441",
+      "bytes": 541204,
+      "response_headers": "HTTP/2 200 \ndate: Wed, 28 Oct 2026 06:38:20 GMT\ncontent-type: application/zip\ncontent-length: 541204\nserver: cloudflare\nlast-modified: Fri, 23 Oct 2026 04:24:03 GMT\nx-frame-options: SAMEORIGIN\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\nreferrer-policy: no-referrer-when-downgrade\nstrict-transport-security: max-age=31536000; includeSubDomains\ncontent-security-policy: default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;\naccept-ranges: bytes\ncf-cache-status: DYNAMIC\ncf-ray: a517efe24b72f0ae-DFW\n\n",
+      "kind": "billstatus",
+      "congress": 119,
+      "bill_type": "sjres",
+      "xml_members": 221
+    }
+  ],
+  "collected_utc": "2026-10-28T06:38:31.442981+00:00",
+  "status": "official source fields; relationships are source assertions, not proof of policy influence"
+}

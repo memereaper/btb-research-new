@@ -1,0 +1,7 @@
+{
+  "checks": {
+    "all_texts_parse": true,
+    "all_requested_pairs_acquired": true
+  },
+  "analytical_status": "unreviewed candidate matches only"
+}

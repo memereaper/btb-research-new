@@ -1,0 +1,7 @@
+{
+  "checks": {
+    "unique_member_ids": true,
+    "all_terms_have_members": true,
+    "valid_term_dates": true
+  }
+}

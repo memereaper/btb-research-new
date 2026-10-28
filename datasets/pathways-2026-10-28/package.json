@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "catalog.json",
+      "bytes": 22154,
+      "sha256": "95eb9b4abb10fccfa00fad79e82746a9b799c9f83cf86f555dc8d4de197f4b00"
+    },
+    {
+      "path": "tables/actions.parquet",
+      "bytes": 2453306,
+      "sha256": "4bc9b95f6df756ec413b1f02270805b8871fe572b0f34a6e50f233a69f5d83de"
+    },
+    {
+      "path": "tables/bills.parquet",
+      "bytes": 2421461,
+      "sha256": "6a695209df87c9e20f7c18fe94c799b118a7d0bd27c6c7e4bdc4ad5ecf9dad2d"
+    },
+    {
+      "path": "tables/cbo_estimates.parquet",
+      "bytes": 218864,
+      "sha256": "0aee1d385008aea80c20ed32b503c9738dfba067d7cc389840dbfef1f9c069f5"
+    },
+    {
+      "path": "tables/committee_events.parquet",
+      "bytes": 1722664,
+      "sha256": "2d0371a1206d5d8ad0d10060bfed2533cd06ea214e9dc4fdda54c1521f0440bd"
+    },
+    {
+      "path": "tables/committees.parquet",
+      "bytes": 1371364,
+      "sha256": "e63ea77d5d4d91a6a4a3cbf9ed1aa6b31706958eba1638539b27056ac0bc09ba"
+    },
+    {
+      "path": "tables/cosponsors.parquet",
+      "bytes": 3351467,
+      "sha256": "1367c7c21c65cf72ffad5910fcaf248fe7b1f310d4956d8f4c9e87d6f9c296fd"
+    },
+    {
+      "path": "tables/related_bills.parquet",
+      "bytes": 854398,
+      "sha256": "dfc7fbd6700548c1408800d32b764fd729d9cc189734ce026b086aa8fc3b14fb"
+    },
+    {
+      "path": "tables/subjects.parquet",
+      "bytes": 933115,
+      "sha256": "a1c517e5d6e41faa746aacfa821a71a956b9d77325807c934fea2b32539ef584"
+    },
+    {
+      "path": "tables/summaries.parquet",
+      "bytes": 2296615,
+      "sha256": "bd7705a28e14d97b787e02eaf9ef349414228312b4dac80944220689b19793a2"
+    },
+    {
+      "path": "tables/text_versions.parquet",
+      "bytes": 1508325,
+      "sha256": "853989e83602c28c31b5fc121597c8fadb23657534685aced6e1ae23c82e38e4"
+    },
+    {
+      "path": "tables/vote_references.parquet",
+      "bytes": 66756,
+      "sha256": "9bd19ac2524fe03e52d2e2b7d22aae912b829eb159de2b712eabe21b0c6b6890"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 672,
+      "sha256": "d02b9d09cb1b6bf1202598902d42af345b94e474b6fb36653836ecc780d3c50b"
+    }
+  ]
+}

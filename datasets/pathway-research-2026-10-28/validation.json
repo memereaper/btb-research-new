@@ -1,0 +1,18 @@
+{
+  "join_coverage": {
+    "unmatched_bill_sponsor_ids": 0,
+    "unmatched_unique_cosponsor_ids": 0,
+    "unmatched_unique_house_member_ids": 0,
+    "original_118_bill_ids_missing_from_new_snapshot": 0,
+    "new_118_bill_ids_absent_from_original": 0,
+    "original_vs_new_118_introduction_differences": 0
+  },
+  "timing_categories": {
+    "active_by_date_only": 4656,
+    "same_day_order_ambiguous": 87
+  },
+  "checks": {
+    "all_identity_joins_matched": true,
+    "original_118_population_and_introductions_preserved": true
+  }
+}

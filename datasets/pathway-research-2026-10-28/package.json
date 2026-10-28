@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "catalog.json",
+      "bytes": 2190,
+      "sha256": "196734effc1ebe5dcb0e229b38905676dbdbd4bc677f1e038b004e6b8f476048"
+    },
+    {
+      "path": "tables/cosponsor_vote_observations.parquet",
+      "bytes": 39370,
+      "sha256": "2e5de365e946c229b725c3b2cb92ddbe3065ed9de1bf82235ea4f16d10356f12"
+    },
+    {
+      "path": "tables/reintroduction_candidates.parquet",
+      "bytes": 388000,
+      "sha256": "e5ad517c6564f5da8994c2cfbd56d4c18574b01c373125a40f5c54df97f930d4"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 532,
+      "sha256": "234f8d3e82ba40572b7cba457eed5f65fea5082669bfa62805950601ca1b4c79"
+    }
+  ]
+}

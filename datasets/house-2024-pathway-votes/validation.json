@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "official_totals_match_all_acquired_votes": true,
+    "unique_vote_member_pairs": true,
+    "no_missing_member_ids": true,
+    "all_positions_have_vote": true,
+    "all_requested_downloads_succeeded": true
+  },
+  "analytical_limit": "Yea is not always policy support. Quorum, procedure, amendments and passage are separate source questions; Not Voting is not opposition."
+}

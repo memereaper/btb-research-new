@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "catalog.json",
+      "bytes": 726446,
+      "sha256": "16c44b15416bf9ad916681ab71280d74834318aa7aeaf7618297fe398bf0fecc"
+    },
+    {
+      "path": "tables/positions.parquet",
+      "bytes": 95170,
+      "sha256": "5cbc589a824d47e0d71b6037d6e2228d7e3fdb45750017958383f63130f6f5e5"
+    },
+    {
+      "path": "tables/votes.parquet",
+      "bytes": 25182,
+      "sha256": "05ec7cdc1b7cce99b8f61c93d17644b41e94860b9c734d0e69b8696a99d46329"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 394,
+      "sha256": "b6db32b1142dc879cf5b5a13f96a58583e876fa0fed363f1b22d39efb66099bc"
+    }
+  ]
+}
