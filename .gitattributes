@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Published artifacts are checksummed byte-for-byte, including original source notes.
+datasets/** -text
