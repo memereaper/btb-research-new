@@ -18,3 +18,9 @@ btb researh new/
 
 warehouse/collection-cache/
 work/
+
+.env.*
+!.env.example
+!platform/.env.example
+node_modules/
+platform/local/

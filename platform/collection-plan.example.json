@@ -1,0 +1,7 @@
+{
+  "description": "Example next-snapshot plan. Choose new output names before running; this acquires records but never changes published findings. House/text scope remains the documented 2024 subset/pilot.",
+  "jobs": [
+    {"id":"status-113-119", "kind":"billstatus", "congresses":[113,114,115,116,117,118,119], "refresh":true, "output":"datasets/pathways-next-snapshot"},
+    {"id":"member-crosswalk", "kind":"members", "refresh":true, "output":"datasets/members-next-snapshot"}
+  ]
+}

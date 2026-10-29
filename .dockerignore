@@ -1,0 +1,9 @@
+.git
+.venv
+work
+warehouse
+imports
+releases
+.env
+**/.env
+**/node_modules

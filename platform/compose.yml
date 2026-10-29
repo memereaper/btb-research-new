@@ -1,0 +1,43 @@
+# Local/review stack. For production, use a managed PostgreSQL URL and HTTPS ingress.
+services:
+  database:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: btb
+      POSTGRES_USER: btb_loader
+      POSTGRES_PASSWORD: ${BTB_LOCAL_DB_PASSWORD:?Set a local database password}
+    volumes:
+      - btb_database:/var/lib/postgresql/data
+    ports:
+      - '127.0.0.1:55432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U btb_loader -d btb']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  api:
+    build:
+      context: ..
+      dockerfile: platform/Dockerfile
+    environment:
+      BTB_DATABASE_URL: ${BTB_DATABASE_URL:?Use the SELECT-only reader URL}
+      BTB_ALLOWED_ORIGINS: ${BTB_ALLOWED_ORIGINS:-https://betweenthebills.com}
+      BTB_POOL_SIZE: 8
+      # Proxy does per-client limiting; this larger cap is defense against direct access.
+      BTB_RATE_PER_MINUTE: 6000
+    depends_on:
+      database:
+        condition: service_healthy
+    read_only: true
+    tmpfs: ['/tmp']
+    security_opt: ['no-new-privileges:true']
+    cap_drop: ['ALL']
+  proxy:
+    image: nginx:stable-alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - '127.0.0.1:8787:8080'
+    depends_on: ['api']
+volumes:
+  btb_database:

@@ -54,3 +54,11 @@ python scripts/write_collection_inventory.py
 ```
 
 The collectors accept `--output` for a separately named snapshot; House/text collectors also accept `--status` to select the input status release. `--refresh` refetches source URLs and retains old content objects. Research SQL and package mappings are deliberately frozen to this release; review them explicitly for another scope. Offline CI verifies published data; collection does not run automatically on every push. New source tables retain string fields, with explicit typed comparisons in research SQL. Raw official XML/ZIP/YAML objects remain in the ignored local collection cache. The 119th is ongoing, recurrence/text matches are unverified candidates, and absence is never silently converted to opposition.
+
+## Scalable website data platform
+
+The new `btb_platform` package separates research processing from visitor requests. It builds content-addressed, Congress-partitioned Parquet releases; archives sources through S3-compatible storage; transactionally loads indexed PostgreSQL tables; and serves bounded, version-pinned summaries, bill searches and evidence through a read-only API. A separate WordPress shortcode integration uses 50-row pages. Existing investigations, animations and data releases remain unchanged.
+
+Read [architecture and data contracts](docs/platform/architecture.md) and the [setup/publication/recovery runbook](docs/platform/runbook.md). Install `requirements-platform.lock`, then run `python -m btb_platform --help`. The platform CI workflow tests native PostgreSQL, COPY imports, reproducible builds and a million-row synthetic index workload. Local test evidence must not be presented as production capacity.
+
+Current scope is **prepared and locally tested**, not cloud deployed. The user has no existing hosting accounts and requested preparation first. Cloud archive storage, a managed PostgreSQL account, a container/API host, production credentials, HTTPS, budgets, operational scheduling and the final WordPress installation await account setup. No paid resources or accounts were created.
