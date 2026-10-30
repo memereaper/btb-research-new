@@ -1,0 +1,381 @@
+{
+  "scope": "HR, S, H.J.Res., S.J.Res. introduced in the 116th-118th Congresses (2019-2024); 119th excluded from rates (in session).",
+  "definitions": {
+    "coalition_at_intro": "From original cosponsors (joined on the introduction date). bipartisan = at least one original cosponsor from the other major party; same_party = original cosponsors all from the sponsor's party or independents; solo = no original cosponsors. Independent sponsors are reported separately.",
+    "stages": "Library of Congress action codes: reported 5000/14000, discharged 14500/H12300, passed House 8000, passed Senate 17000; became law from law identifiers. Cleared committee = reported, discharged, or passed a chamber.",
+    "majority": {
+      "116-House": "D",
+      "116-Senate": "R",
+      "117-House": "D",
+      "117-Senate": "D",
+      "118-House": "R",
+      "118-Senate": "D"
+    },
+    "ceremonial": "Policy area Commemorations, or titles designating a postal facility. Shown as a sensitivity check."
+  },
+  "all_bills": [
+    {
+      "coalition": "bipartisan",
+      "bills": 16995,
+      "pct_cleared_committee": 17.33,
+      "pct_passed_one_chamber": 11.89,
+      "pct_passed_both": 4.21,
+      "pct_became_law": 4.07,
+      "laws": 692
+    },
+    {
+      "coalition": "same_party",
+      "bills": 16248,
+      "pct_cleared_committee": 5.57,
+      "pct_passed_one_chamber": 3.2,
+      "pct_passed_both": 0.92,
+      "pct_became_law": 0.84,
+      "laws": 136
+    },
+    {
+      "coalition": "solo",
+      "bills": 12620,
+      "pct_cleared_committee": 7.42,
+      "pct_passed_one_chamber": 4.01,
+      "pct_passed_both": 1.22,
+      "pct_became_law": 1.22,
+      "laws": 154
+    }
+  ],
+  "excluding_ceremonial": [
+    {
+      "coalition": "bipartisan",
+      "bills": 16773,
+      "pct_cleared_committee": 16.66,
+      "pct_passed_one_chamber": 11.15,
+      "pct_passed_both": 3.47,
+      "pct_became_law": 3.33,
+      "laws": 558
+    },
+    {
+      "coalition": "same_party",
+      "bills": 16137,
+      "pct_cleared_committee": 5.27,
+      "pct_passed_one_chamber": 2.91,
+      "pct_passed_both": 0.68,
+      "pct_became_law": 0.6,
+      "laws": 97
+    },
+    {
+      "coalition": "solo",
+      "bills": 12546,
+      "pct_cleared_committee": 7.21,
+      "pct_passed_one_chamber": 3.78,
+      "pct_passed_both": 1.02,
+      "pct_became_law": 1.02,
+      "laws": 128
+    }
+  ],
+  "majority_sponsor": [
+    {
+      "coalition": "bipartisan",
+      "bills": 10222,
+      "pct_cleared_committee": 18.59,
+      "pct_passed_one_chamber": 12.31,
+      "pct_passed_both": 3.8,
+      "pct_became_law": 3.65,
+      "laws": 373
+    },
+    {
+      "coalition": "same_party",
+      "bills": 9165,
+      "pct_cleared_committee": 7.24,
+      "pct_passed_one_chamber": 3.93,
+      "pct_passed_both": 0.76,
+      "pct_became_law": 0.69,
+      "laws": 63
+    },
+    {
+      "coalition": "solo",
+      "bills": 6896,
+      "pct_cleared_committee": 10.09,
+      "pct_passed_one_chamber": 5.0,
+      "pct_passed_both": 1.38,
+      "pct_became_law": 1.38,
+      "laws": 95
+    }
+  ],
+  "minority_sponsor": [
+    {
+      "coalition": "bipartisan",
+      "bills": 6551,
+      "pct_cleared_committee": 13.66,
+      "pct_passed_one_chamber": 9.34,
+      "pct_passed_both": 2.96,
+      "pct_became_law": 2.82,
+      "laws": 185
+    },
+    {
+      "coalition": "same_party",
+      "bills": 6972,
+      "pct_cleared_committee": 2.68,
+      "pct_passed_one_chamber": 1.58,
+      "pct_passed_both": 0.57,
+      "pct_became_law": 0.49,
+      "laws": 34
+    },
+    {
+      "coalition": "solo",
+      "bills": 5650,
+      "pct_cleared_committee": 3.68,
+      "pct_passed_one_chamber": 2.28,
+      "pct_passed_both": 0.58,
+      "pct_became_law": 0.58,
+      "laws": 33
+    }
+  ],
+  "by_congress": [
+    {
+      "congress": 116,
+      "coalition": "bipartisan",
+      "bills": 5640,
+      "pct_became_law": 4.5
+    },
+    {
+      "congress": 116,
+      "coalition": "same_party",
+      "bills": 4580,
+      "pct_became_law": 0.68
+    },
+    {
+      "congress": 116,
+      "coalition": "solo",
+      "bills": 4039,
+      "pct_became_law": 1.46
+    },
+    {
+      "congress": 117,
+      "coalition": "bipartisan",
+      "bills": 5416,
+      "pct_became_law": 4.45
+    },
+    {
+      "congress": 117,
+      "coalition": "same_party",
+      "bills": 5535,
+      "pct_became_law": 1.05
+    },
+    {
+      "congress": 117,
+      "coalition": "solo",
+      "bills": 4215,
+      "pct_became_law": 1.57
+    },
+    {
+      "congress": 118,
+      "coalition": "bipartisan",
+      "bills": 5939,
+      "pct_became_law": 3.32
+    },
+    {
+      "congress": 118,
+      "coalition": "same_party",
+      "bills": 6133,
+      "pct_became_law": 0.77
+    },
+    {
+      "congress": 118,
+      "coalition": "solo",
+      "bills": 4366,
+      "pct_became_law": 0.66
+    }
+  ],
+  "dose_response": [
+    {
+      "original_cross_party_cosponsors": "0",
+      "bills": 16137,
+      "pct_passed_one_chamber": 2.91,
+      "pct_became_law": 0.6
+    },
+    {
+      "original_cross_party_cosponsors": "1",
+      "bills": 10810,
+      "pct_passed_one_chamber": 9.9,
+      "pct_became_law": 2.86
+    },
+    {
+      "original_cross_party_cosponsors": "2-4",
+      "bills": 4963,
+      "pct_passed_one_chamber": 12.17,
+      "pct_became_law": 3.36
+    },
+    {
+      "original_cross_party_cosponsors": "5-9",
+      "bills": 710,
+      "pct_passed_one_chamber": 17.18,
+      "pct_became_law": 6.76
+    },
+    {
+      "original_cross_party_cosponsors": "10+",
+      "bills": 290,
+      "pct_passed_one_chamber": 25.52,
+      "pct_became_law": 11.72
+    }
+  ],
+  "laws_by_coalition": [
+    {
+      "coalition": "bipartisan",
+      "laws": 692,
+      "pct_of_laws": 70.4
+    },
+    {
+      "coalition": "solo",
+      "laws": 154,
+      "pct_of_laws": 15.7
+    },
+    {
+      "coalition": "same_party",
+      "laws": 136,
+      "pct_of_laws": 13.8
+    },
+    {
+      "coalition": "other_sponsor",
+      "laws": 1,
+      "pct_of_laws": 0.1
+    }
+  ],
+  "later_coalition_growth": [
+    {
+      "furthest": "introduced",
+      "bills": 41076,
+      "avg_original_cross": 0.65,
+      "avg_final_cross": 1.82
+    },
+    {
+      "furthest": "cleared_committee",
+      "bills": 1740,
+      "avg_original_cross": 1.12,
+      "avg_final_cross": 3.22
+    },
+    {
+      "furthest": "passed_one",
+      "bills": 2028,
+      "avg_original_cross": 1.58,
+      "avg_final_cross": 4.89
+    },
+    {
+      "furthest": "passed_both",
+      "bills": 37,
+      "avg_original_cross": 2.43,
+      "avg_final_cross": 8.78
+    },
+    {
+      "furthest": "law",
+      "bills": 982,
+      "avg_original_cross": 2.67,
+      "avg_final_cross": 8.57
+    }
+  ],
+  "members_most_cross_party": [
+    {
+      "member_id": "K000210",
+      "name": "Rep. King, Peter T. [R-NY-2]",
+      "party": "R",
+      "cosponsorships": 375,
+      "pct_cross_party": 77.1
+    },
+    {
+      "member_id": "F000466",
+      "name": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+      "party": "R",
+      "cosponsorships": 3229,
+      "pct_cross_party": 76.3
+    },
+    {
+      "member_id": "M001221",
+      "name": "Rep. Molinaro, Marcus J. [R-NY-19]",
+      "party": "R",
+      "cosponsorships": 427,
+      "pct_cross_party": 74.5
+    },
+    {
+      "member_id": "K000386",
+      "name": "Rep. Katko, John [R-NY-24]",
+      "party": "R",
+      "cosponsorships": 752,
+      "pct_cross_party": 72.3
+    },
+    {
+      "member_id": "U000031",
+      "name": "Rep. Upton, Fred [R-MI-6]",
+      "party": "R",
+      "cosponsorships": 407,
+      "pct_cross_party": 69.5
+    },
+    {
+      "member_id": "Y000033",
+      "name": "Rep. Young, Don [R-AK-At Large]",
+      "party": "R",
+      "cosponsorships": 596,
+      "pct_cross_party": 68.1
+    },
+    {
+      "member_id": "R000585",
+      "name": "Rep. Reed, Tom [R-NY-23]",
+      "party": "R",
+      "cosponsorships": 312,
+      "pct_cross_party": 66.7
+    },
+    {
+      "member_id": "B001284",
+      "name": "Rep. Brooks, Susan W. [R-IN-5]",
+      "party": "R",
+      "cosponsorships": 243,
+      "pct_cross_party": 63.8
+    },
+    {
+      "member_id": "H001073",
+      "name": "Rep. Hurd, Will [R-TX-23]",
+      "party": "R",
+      "cosponsorships": 217,
+      "pct_cross_party": 61.8
+    },
+    {
+      "member_id": "R000600",
+      "name": "Del. Radewagen, Aumua Amata Coleman [R-AS-At Large]",
+      "party": "R",
+      "cosponsorships": 452,
+      "pct_cross_party": 61.7
+    },
+    {
+      "member_id": "C001035",
+      "name": "Sen. Collins, Susan M. [R-ME]",
+      "party": "R",
+      "cosponsorships": 1130,
+      "pct_cross_party": 61.6
+    },
+    {
+      "member_id": "C001094",
+      "name": "Rep. Cook, Paul [R-CA-8]",
+      "party": "R",
+      "cosponsorships": 273,
+      "pct_cross_party": 61.5
+    },
+    {
+      "member_id": "H001056",
+      "name": "Rep. Herrera Beutler, Jaime [R-WA-3]",
+      "party": "R",
+      "cosponsorships": 378,
+      "pct_cross_party": 61.4
+    },
+    {
+      "member_id": "D000230",
+      "name": "Rep. Davis, Donald G. [D-NC-1]",
+      "party": "D",
+      "cosponsorships": 777,
+      "pct_cross_party": 60.2
+    },
+    {
+      "member_id": "K000378",
+      "name": "Rep. Kinzinger, Adam [R-IL-16]",
+      "party": "R",
+      "cosponsorships": 346,
+      "pct_cross_party": 60.1
+    }
+  ]
+}

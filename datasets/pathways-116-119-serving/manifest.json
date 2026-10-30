@@ -1,0 +1,15 @@
+{
+  "bills_files": [
+    "bills-00.json",
+    "bills-01.json",
+    "bills-02.json",
+    "bills-03.json",
+    "bills-04.json",
+    "bills-05.json",
+    "bills-06.json",
+    "bills-07.json"
+  ],
+  "bills_rows": 63173,
+  "members_rows": 809,
+  "source_database": "pathways-116-119.duckdb"
+}
