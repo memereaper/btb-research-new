@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "source_xml_equals_bills": true,
+    "unique_bill_ids": true,
+    "unique_action_ids": true,
+    "cosponsors_bill_links": true,
+    "actions_bill_links": true,
+    "committees_bill_links": true,
+    "committee_events_bill_links": true,
+    "related_bills_bill_links": true,
+    "text_versions_bill_links": true,
+    "cbo_estimates_bill_links": true,
+    "subjects_bill_links": true,
+    "summaries_bill_links": true,
+    "vote_references_bill_links": true,
+    "valid_introduction_dates": true,
+    "valid_cosponsor_dates": true
+  },
+  "missingness": {
+    "cosponsor_member_ids": 0,
+    "sponsor_ids": 11,
+    "related_bills_outside_scope": 686
+  }
+}

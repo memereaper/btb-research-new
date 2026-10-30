@@ -22,7 +22,7 @@ for name,rows in [('inventory.csv',inventory),('field-completeness.csv',quality)
     with (out/name).open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 (out/'sources.json').write_text(json.dumps(sources,indent=2)+'\n')
-lines=['# Acquired collection inventory — October 28, 2026','','Counts overlap across relational tables. Do not add them as independent people, bills or events. Source fields retain strings; research SQL casts dates/numbers explicitly.','','| Package / table | Rows | Fields |','|---|---:|---:|']
+lines=['# Acquired collection inventory — updated October 29, 2026','','Counts overlap across relational tables. Do not add them as independent people, bills or events. Source fields retain strings; research SQL casts dates/numbers explicitly.','','| Package / table | Rows | Fields |','|---|---:|---:|']
 lines += [f"| {x['package']} / {x['table']} | {x['rows']:,} | {x['fields']} |" for x in inventory]
 lines += ['','Per-field missingness: field-completeness.csv. Exact URLs, retrieval timestamps, SHA-256 and HTTP response headers: sources.json. Methods, source scope and join limits: methods.md. Each dataset package includes its own checksums, catalog and validation report. Raw source bytes remain local under warehouse/collection-cache/objects/<sha256>. Sources were retrieved across a time window, not as a transactionally simultaneous extract.','',f'{len(inventory)} acquired/derived collection tables; {len(quality)} field-level completeness checks; {len(sources)} raw source snapshots referenced.']
 (out/'inventory.md').write_text('\n'.join(lines)+'\n');c.close()

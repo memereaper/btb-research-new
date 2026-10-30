@@ -24,3 +24,6 @@ work/
 !platform/.env.example
 node_modules/
 platform/local/
+
+# Built SQL databases (rebuild with scripts/build_pathways_sql.py)
+warehouse/sql/

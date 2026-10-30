@@ -4,7 +4,7 @@ import argparse,json
 from pathlib import Path
 import duckdb
 from build_historical import ROOT,digest
-PACKAGES=['pathways-2026-10-28','house-2024-pathway-votes','member-crosswalk-2026-10-28','text-survival-pilot-2026-10-28','pathway-research-2026-10-28']
+PACKAGES=['pathways-2026-10-28','pathways-116-117-2026-10-29','house-2024-pathway-votes','member-crosswalk-2026-10-28','text-survival-pilot-2026-10-28','pathway-research-2026-10-28']
 def verify(root=ROOT,raw=False):
     c=duckdb.connect();total_tables=0
     for name in PACKAGES:

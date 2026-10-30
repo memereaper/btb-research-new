@@ -10,6 +10,17 @@ pathways-2026-10-28,subjects,88400,6,datasets/pathways-2026-10-28/tables/subject
 pathways-2026-10-28,summaries,16507,9,datasets/pathways-2026-10-28/tables/summaries.parquet
 pathways-2026-10-28,text_versions,40472,9,datasets/pathways-2026-10-28/tables/text_versions.parquet
 pathways-2026-10-28,vote_references,2029,12,datasets/pathways-2026-10-28/tables/vote_references.parquet
+pathways-116-117-2026-10-29,actions,142568,12,datasets/pathways-116-117-2026-10-29/tables/actions.parquet
+pathways-116-117-2026-10-29,bills,29582,23,datasets/pathways-116-117-2026-10-29/tables/bills.parquet
+pathways-116-117-2026-10-29,cbo_estimates,2465,8,datasets/pathways-116-117-2026-10-29/tables/cbo_estimates.parquet
+pathways-116-117-2026-10-29,committee_events,59127,8,datasets/pathways-116-117-2026-10-29/tables/committee_events.parquet
+pathways-116-117-2026-10-29,committees,38657,8,datasets/pathways-116-117-2026-10-29/tables/committees.parquet
+pathways-116-117-2026-10-29,cosponsors,357680,13,datasets/pathways-116-117-2026-10-29/tables/cosponsors.parquet
+pathways-116-117-2026-10-29,related_bills,32805,9,datasets/pathways-116-117-2026-10-29/tables/related_bills.parquet
+pathways-116-117-2026-10-29,subjects,243832,6,datasets/pathways-116-117-2026-10-29/tables/subjects.parquet
+pathways-116-117-2026-10-29,summaries,34672,9,datasets/pathways-116-117-2026-10-29/tables/summaries.parquet
+pathways-116-117-2026-10-29,text_versions,36786,9,datasets/pathways-116-117-2026-10-29/tables/text_versions.parquet
+pathways-116-117-2026-10-29,vote_references,2133,12,datasets/pathways-116-117-2026-10-29/tables/vote_references.parquet
 house-2024-pathway-votes,positions,118488,8,datasets/house-2024-pathway-votes/tables/positions.parquet
 house-2024-pathway-votes,votes,275,19,datasets/house-2024-pathway-votes/tables/votes.parquet
 member-crosswalk-2026-10-28,member_identifiers,97319,4,datasets/member-crosswalk-2026-10-28/tables/member_identifiers.parquet

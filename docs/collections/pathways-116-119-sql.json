@@ -1,0 +1,174 @@
+{
+  "database": "pathways-116-119.duckdb",
+  "built_utc": "2026-10-30T01:37:54+00:00",
+  "congresses": [
+    116,
+    117,
+    118,
+    119
+  ],
+  "inputs": {
+    "pathways-116-117-2026-10-29": "997f38fcb3ef33b46a4027a90f1ec4ce638a2c0b4cf208ec475875f59772307f",
+    "pathways-2026-10-28": "2cf1f913d16c3d5d64801480c10a0a08c2ad67ed0958af0a7906b06ac12d37fb"
+  },
+  "bills": 63173,
+  "laws": 1122,
+  "total_rows": 1765337,
+  "rows_sharing_a_grain_key": 958,
+  "quality_flags": {
+    "actions_repeated_payload_rows": 26641,
+    "actions_before_introduction": 215,
+    "bills_missing_sponsor_id": 11,
+    "related_bills_outside_116_119": 1436,
+    "bills_without_policy_area": 241
+  },
+  "tables": [
+    {
+      "table": "bills",
+      "grain": [
+        "bill_id"
+      ],
+      "rows": 63173,
+      "distinct_grain_keys": 63173,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 29582,
+      "rows_118_119": 33591
+    },
+    {
+      "table": "actions",
+      "grain": [
+        "action_id"
+      ],
+      "rows": 290617,
+      "distinct_grain_keys": 290617,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 142568,
+      "rows_118_119": 148049
+    },
+    {
+      "table": "cosponsors",
+      "grain": [
+        "bill_id",
+        "sponsor_id",
+        "joined_date"
+      ],
+      "rows": 680906,
+      "distinct_grain_keys": 680905,
+      "rows_sharing_a_grain_key": 1,
+      "rows_116_117": 357680,
+      "rows_118_119": 323226
+    },
+    {
+      "table": "committees",
+      "grain": [
+        "bill_id",
+        "committee_id"
+      ],
+      "rows": 81501,
+      "distinct_grain_keys": 81501,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 38657,
+      "rows_118_119": 42844
+    },
+    {
+      "table": "committee_events",
+      "grain": [
+        "bill_id",
+        "committee_id",
+        "event_name",
+        "event_date"
+      ],
+      "rows": 120879,
+      "distinct_grain_keys": 120068,
+      "rows_sharing_a_grain_key": 811,
+      "rows_116_117": 59127,
+      "rows_118_119": 61752
+    },
+    {
+      "table": "related_bills",
+      "grain": [
+        "bill_id",
+        "related_bill_id",
+        "relationship",
+        "identified_by"
+      ],
+      "rows": 58265,
+      "distinct_grain_keys": 58239,
+      "rows_sharing_a_grain_key": 26,
+      "rows_116_117": 32805,
+      "rows_118_119": 25460
+    },
+    {
+      "table": "subjects",
+      "grain": [
+        "bill_id",
+        "subject"
+      ],
+      "rows": 332232,
+      "distinct_grain_keys": 332232,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 243832,
+      "rows_118_119": 88400
+    },
+    {
+      "table": "summaries",
+      "grain": [
+        "bill_id",
+        "version_code",
+        "action_date"
+      ],
+      "rows": 51179,
+      "distinct_grain_keys": 51179,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 34672,
+      "rows_118_119": 16507
+    },
+    {
+      "table": "text_versions",
+      "grain": [
+        "bill_id",
+        "version_type",
+        "version_date",
+        "format_type",
+        "url"
+      ],
+      "rows": 77258,
+      "distinct_grain_keys": 77258,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 36786,
+      "rows_118_119": 40472
+    },
+    {
+      "table": "cbo_estimates",
+      "grain": [
+        "bill_id",
+        "url",
+        "publication_date"
+      ],
+      "rows": 5165,
+      "distinct_grain_keys": 5045,
+      "rows_sharing_a_grain_key": 120,
+      "rows_116_117": 2465,
+      "rows_118_119": 2700
+    },
+    {
+      "table": "vote_references",
+      "grain": [
+        "bill_id",
+        "action_id",
+        "chamber",
+        "congress",
+        "session",
+        "roll_number"
+      ],
+      "rows": 4162,
+      "distinct_grain_keys": 4162,
+      "rows_sharing_a_grain_key": 0,
+      "rows_116_117": 2133,
+      "rows_118_119": 2029
+    }
+  ],
+  "counting_rule": "Rows are different record types (bills, actions, cosponsorships...). Congress coverage is disjoint across the two inputs, so no record is counted in both. They are not 1.7M independent bills or events.",
+  "database_sha256": "1134c4d4dd88367c5b275169d5d5145f444ea70a079c9fccfabf4e182f14d31e",
+  "database_bytes": 250359808
+}
