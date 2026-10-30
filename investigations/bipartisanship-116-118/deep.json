@@ -1,0 +1,1614 @@
+{
+ "scope": "Bills and joint resolutions, 116th-118th Congresses (2019-2024), D or R sponsor, ceremonial bills excluded unless noted.",
+ "funnel": [
+  {
+   "coalition": "bipartisan",
+   "n": 16773,
+   "committee_action": 3673,
+   "cleared_committee": 2795,
+   "passed_one": 1870,
+   "passed_both": 582,
+   "law": 558
+  },
+  {
+   "coalition": "same_party",
+   "n": 16137,
+   "committee_action": 1360,
+   "cleared_committee": 851,
+   "passed_one": 470,
+   "passed_both": 110,
+   "law": 97
+  },
+  {
+   "coalition": "solo",
+   "n": 12546,
+   "committee_action": 1313,
+   "cleared_committee": 904,
+   "passed_one": 474,
+   "passed_both": 128,
+   "law": 128
+  }
+ ],
+ "time_to_law": {
+  "days": [
+   0,
+   7,
+   14,
+   30,
+   45,
+   60,
+   90,
+   120,
+   150,
+   180,
+   240,
+   300,
+   365,
+   450,
+   540,
+   630,
+   730
+  ],
+  "curves": {
+   "bipartisan": {
+    "n": 16773,
+    "pct_law_by_day": [
+     0.0,
+     0.03,
+     0.113,
+     0.238,
+     0.31,
+     0.388,
+     0.501,
+     0.638,
+     0.769,
+     0.912,
+     1.222,
+     1.58,
+     1.938,
+     2.331,
+     2.629,
+     3.029,
+     3.321
+    ]
+   },
+   "same_party": {
+    "n": 16137,
+    "pct_law_by_day": [
+     0.0,
+     0.019,
+     0.031,
+     0.05,
+     0.087,
+     0.099,
+     0.136,
+     0.186,
+     0.198,
+     0.223,
+     0.266,
+     0.347,
+     0.397,
+     0.452,
+     0.49,
+     0.552,
+     0.601
+    ]
+   },
+   "solo": {
+    "n": 12546,
+    "pct_law_by_day": [
+     0.024,
+     0.128,
+     0.239,
+     0.279,
+     0.303,
+     0.327,
+     0.391,
+     0.414,
+     0.446,
+     0.502,
+     0.574,
+     0.654,
+     0.725,
+     0.845,
+     0.885,
+     0.917,
+     1.02
+    ]
+   }
+  },
+  "median_days_to_law": {
+   "solo": 193,
+   "bipartisan": 313,
+   "same_party": 263
+  },
+  "note": "Days from introduction to the Became Public/Private Law action. A bill introduced late in a Congress has less time; all three groups share that limit."
+ },
+ "snowball": {
+  "days": [
+   0,
+   7,
+   14,
+   30,
+   45,
+   60,
+   90,
+   120,
+   150,
+   180,
+   240,
+   300,
+   365,
+   450,
+   540,
+   630,
+   730
+  ],
+  "by_furthest_stage": {
+   "introduced": {
+    "n": 40906,
+    "avg_cross_party_cosponsors_by_day": [
+     0.64,
+     0.71,
+     0.76,
+     0.88,
+     0.96,
+     1.04,
+     1.17,
+     1.27,
+     1.36,
+     1.42,
+     1.53,
+     1.61,
+     1.67,
+     1.73,
+     1.78,
+     1.8,
+     1.81
+    ]
+   },
+   "cleared_committee": {
+    "n": 1736,
+    "avg_cross_party_cosponsors_by_day": [
+     1.13,
+     1.26,
+     1.35,
+     1.55,
+     1.67,
+     1.82,
+     2.07,
+     2.28,
+     2.45,
+     2.56,
+     2.78,
+     2.93,
+     3.04,
+     3.13,
+     3.19,
+     3.22,
+     3.22
+    ]
+   },
+   "passed_one": {
+    "n": 1994,
+    "avg_cross_party_cosponsors_by_day": [
+     1.56,
+     1.94,
+     2.21,
+     2.56,
+     2.87,
+     3.09,
+     3.48,
+     3.82,
+     4.04,
+     4.21,
+     4.43,
+     4.62,
+     4.77,
+     4.85,
+     4.88,
+     4.89,
+     4.89
+    ]
+   },
+   "passed_both": {
+    "n": 37,
+    "avg_cross_party_cosponsors_by_day": [
+     2.43,
+     3.11,
+     3.24,
+     4.16,
+     4.51,
+     4.92,
+     5.54,
+     6.14,
+     7.41,
+     8.22,
+     8.46,
+     8.59,
+     8.7,
+     8.76,
+     8.76,
+     8.78,
+     8.78
+    ]
+   },
+   "law": {
+    "n": 783,
+    "avg_cross_party_cosponsors_by_day": [
+     2.37,
+     2.96,
+     3.25,
+     4.11,
+     4.48,
+     4.9,
+     5.61,
+     6.4,
+     7.03,
+     7.47,
+     7.92,
+     8.19,
+     8.39,
+     8.68,
+     8.73,
+     8.78,
+     8.78
+    ]
+   }
+  }
+ },
+ "late_bridges": [
+  {
+   "group": "bipartisan_at_intro",
+   "bills": 16773,
+   "pct_passed_one": 11.15,
+   "pct_became_law": 3.33
+  },
+  {
+   "group": "gained_cross_party_before_passage",
+   "bills": 1705,
+   "pct_passed_one": 13.31,
+   "pct_became_law": 3.28
+  },
+  {
+   "group": "never_cross_party_before_passage",
+   "bills": 26978,
+   "pct_passed_one": 2.66,
+   "pct_became_law": 0.63
+  }
+ ],
+ "first_cross_join_days": [
+  {
+   "days_after_intro": "1-30",
+   "bills": 692
+  },
+  {
+   "days_after_intro": "31-90",
+   "bills": 461
+  },
+  {
+   "days_after_intro": "91-180",
+   "bills": 242
+  },
+  {
+   "days_after_intro": "181-365",
+   "bills": 222
+  },
+  {
+   "days_after_intro": "366+",
+   "bills": 102
+  }
+ ],
+ "committees": [
+  {
+   "committee": "Energy and Commerce Committee",
+   "chamber": "House",
+   "bills": 5102,
+   "pct_bipartisan": 42.3,
+   "pct_law_bipartisan": 1.72,
+   "pct_law_other": 0.34,
+   "pct_cleared_bipartisan": 12.85,
+   "pct_cleared_other": 3.87,
+   "bipartisan_bills": 2156
+  },
+  {
+   "committee": "Judiciary Committee",
+   "chamber": "House",
+   "bills": 3143,
+   "pct_bipartisan": 25.3,
+   "pct_law_bipartisan": 3.9,
+   "pct_law_other": 0.34,
+   "pct_cleared_bipartisan": 12.09,
+   "pct_cleared_other": 3.87,
+   "bipartisan_bills": 794
+  },
+  {
+   "committee": "Education and Workforce Committee",
+   "chamber": "House",
+   "bills": 3052,
+   "pct_bipartisan": 31.2,
+   "pct_law_bipartisan": 0.74,
+   "pct_law_other": 0.24,
+   "pct_cleared_bipartisan": 7.04,
+   "pct_cleared_other": 3.48,
+   "bipartisan_bills": 952
+  },
+  {
+   "committee": "Finance Committee",
+   "chamber": "Senate",
+   "bills": 2528,
+   "pct_bipartisan": 42.4,
+   "pct_law_bipartisan": 0.19,
+   "pct_law_other": 0.0,
+   "pct_cleared_bipartisan": 1.4,
+   "pct_cleared_other": 0.48,
+   "bipartisan_bills": 1072
+  },
+  {
+   "committee": "Ways and Means Committee",
+   "chamber": "House",
+   "bills": 2481,
+   "pct_bipartisan": 38.4,
+   "pct_law_bipartisan": 1.58,
+   "pct_law_other": 0.07,
+   "pct_cleared_bipartisan": 3.78,
+   "pct_cleared_other": 2.42,
+   "bipartisan_bills": 952
+  },
+  {
+   "committee": "Health, Education, Labor, and Pensions Committee",
+   "chamber": "Senate",
+   "bills": 2466,
+   "pct_bipartisan": 40.4,
+   "pct_law_bipartisan": 2.71,
+   "pct_law_other": 0.14,
+   "pct_cleared_bipartisan": 7.93,
+   "pct_cleared_other": 1.02,
+   "bipartisan_bills": 996
+  },
+  {
+   "committee": "Financial Services Committee",
+   "chamber": "House",
+   "bills": 2454,
+   "pct_bipartisan": 27.8,
+   "pct_law_bipartisan": 3.51,
+   "pct_law_other": 0.17,
+   "pct_cleared_bipartisan": 21.38,
+   "pct_cleared_other": 9.49,
+   "bipartisan_bills": 683
+  },
+  {
+   "committee": "Judiciary Committee",
+   "chamber": "Senate",
+   "bills": 1792,
+   "pct_bipartisan": 33.7,
+   "pct_law_bipartisan": 7.45,
+   "pct_law_other": 0.08,
+   "pct_cleared_bipartisan": 22.52,
+   "pct_cleared_other": 1.09,
+   "bipartisan_bills": 604
+  },
+  {
+   "committee": "Natural Resources Committee",
+   "chamber": "House",
+   "bills": 1636,
+   "pct_bipartisan": 33.4,
+   "pct_law_bipartisan": 6.95,
+   "pct_law_other": 2.66,
+   "pct_cleared_bipartisan": 32.72,
+   "pct_cleared_other": 16.35,
+   "bipartisan_bills": 547
+  },
+  {
+   "committee": "Oversight and Government Reform Committee",
+   "chamber": "House",
+   "bills": 1562,
+   "pct_bipartisan": 25.7,
+   "pct_law_bipartisan": 3.74,
+   "pct_law_other": 0.6,
+   "pct_cleared_bipartisan": 15.71,
+   "pct_cleared_other": 4.31,
+   "bipartisan_bills": 401
+  },
+  {
+   "committee": "Agriculture Committee",
+   "chamber": "House",
+   "bills": 1510,
+   "pct_bipartisan": 38.8,
+   "pct_law_bipartisan": 0.51,
+   "pct_law_other": 0.11,
+   "pct_cleared_bipartisan": 8.02,
+   "pct_cleared_other": 4.65,
+   "bipartisan_bills": 586
+  },
+  {
+   "committee": "Armed Services Committee",
+   "chamber": "House",
+   "bills": 1494,
+   "pct_bipartisan": 39.2,
+   "pct_law_bipartisan": 0.85,
+   "pct_law_other": 0.22,
+   "pct_cleared_bipartisan": 4.1,
+   "pct_cleared_other": 2.09,
+   "bipartisan_bills": 585
+  },
+  {
+   "committee": "Transportation and Infrastructure Committee",
+   "chamber": "House",
+   "bills": 1490,
+   "pct_bipartisan": 35.5,
+   "pct_law_bipartisan": 2.27,
+   "pct_law_other": 1.25,
+   "pct_cleared_bipartisan": 18.71,
+   "pct_cleared_other": 6.66,
+   "bipartisan_bills": 529
+  },
+  {
+   "committee": "Foreign Affairs Committee",
+   "chamber": "House",
+   "bills": 1444,
+   "pct_bipartisan": 40.7,
+   "pct_law_bipartisan": 2.04,
+   "pct_law_other": 0.23,
+   "pct_cleared_bipartisan": 21.77,
+   "pct_cleared_other": 4.56,
+   "bipartisan_bills": 588
+  },
+  {
+   "committee": "Commerce, Science, and Transportation Committee",
+   "chamber": "Senate",
+   "bills": 1392,
+   "pct_bipartisan": 45.8,
+   "pct_law_bipartisan": 5.02,
+   "pct_law_other": 0.4,
+   "pct_cleared_bipartisan": 29.98,
+   "pct_cleared_other": 4.5,
+   "bipartisan_bills": 637
+  },
+  {
+   "committee": "Homeland Security and Governmental Affairs Committee",
+   "chamber": "Senate",
+   "bills": 1163,
+   "pct_bipartisan": 43.0,
+   "pct_law_bipartisan": 8.0,
+   "pct_law_other": 1.06,
+   "pct_cleared_bipartisan": 56.4,
+   "pct_cleared_other": 11.01,
+   "bipartisan_bills": 500
+  },
+  {
+   "committee": "Veterans' Affairs Committee",
+   "chamber": "House",
+   "bills": 1142,
+   "pct_bipartisan": 49.9,
+   "pct_law_bipartisan": 9.3,
+   "pct_law_other": 3.5,
+   "pct_cleared_bipartisan": 20.0,
+   "pct_cleared_other": 12.41,
+   "bipartisan_bills": 570
+  },
+  {
+   "committee": "Energy and Natural Resources Committee",
+   "chamber": "Senate",
+   "bills": 1085,
+   "pct_bipartisan": 26.7,
+   "pct_law_bipartisan": 2.76,
+   "pct_law_other": 0.25,
+   "pct_cleared_bipartisan": 31.03,
+   "pct_cleared_other": 21.13,
+   "bipartisan_bills": 290
+  },
+  {
+   "committee": "Banking, Housing, and Urban Affairs Committee",
+   "chamber": "Senate",
+   "bills": 1083,
+   "pct_bipartisan": 35.9,
+   "pct_law_bipartisan": 3.86,
+   "pct_law_other": 0.43,
+   "pct_cleared_bipartisan": 9.77,
+   "pct_cleared_other": 0.72,
+   "bipartisan_bills": 389
+  },
+  {
+   "committee": "Foreign Relations Committee",
+   "chamber": "Senate",
+   "bills": 920,
+   "pct_bipartisan": 48.7,
+   "pct_law_bipartisan": 2.01,
+   "pct_law_other": 0.0,
+   "pct_cleared_bipartisan": 26.56,
+   "pct_cleared_other": 1.27,
+   "bipartisan_bills": 448
+  },
+  {
+   "committee": "Environment and Public Works Committee",
+   "chamber": "Senate",
+   "bills": 717,
+   "pct_bipartisan": 33.3,
+   "pct_law_bipartisan": 7.11,
+   "pct_law_other": 1.67,
+   "pct_cleared_bipartisan": 23.01,
+   "pct_cleared_other": 5.23,
+   "bipartisan_bills": 239
+  },
+  {
+   "committee": "Agriculture, Nutrition, and Forestry Committee",
+   "chamber": "Senate",
+   "bills": 647,
+   "pct_bipartisan": 47.9,
+   "pct_law_bipartisan": 0.65,
+   "pct_law_other": 0.0,
+   "pct_cleared_bipartisan": 2.9,
+   "pct_cleared_other": 0.3,
+   "bipartisan_bills": 310
+  },
+  {
+   "committee": "Committee on House Administration",
+   "chamber": "House",
+   "bills": 610,
+   "pct_bipartisan": 16.4,
+   "pct_law_bipartisan": 10.0,
+   "pct_law_other": 0.59,
+   "pct_cleared_bipartisan": 23.0,
+   "pct_cleared_other": 4.12,
+   "bipartisan_bills": 100
+  },
+  {
+   "committee": "Veterans' Affairs Committee",
+   "chamber": "Senate",
+   "bills": 579,
+   "pct_bipartisan": 59.8,
+   "pct_law_bipartisan": 7.8,
+   "pct_law_other": 6.87,
+   "pct_cleared_bipartisan": 16.18,
+   "pct_cleared_other": 11.16,
+   "bipartisan_bills": 346
+  },
+  {
+   "committee": "Homeland Security Committee",
+   "chamber": "House",
+   "bills": 570,
+   "pct_bipartisan": 38.1,
+   "pct_law_bipartisan": 5.99,
+   "pct_law_other": 0.85,
+   "pct_cleared_bipartisan": 41.94,
+   "pct_cleared_other": 22.95,
+   "bipartisan_bills": 217
+  },
+  {
+   "committee": "Armed Services Committee",
+   "chamber": "Senate",
+   "bills": 518,
+   "pct_bipartisan": 44.0,
+   "pct_law_bipartisan": 0.0,
+   "pct_law_other": 0.34,
+   "pct_cleared_bipartisan": 0.88,
+   "pct_cleared_other": 1.38,
+   "bipartisan_bills": 228
+  },
+  {
+   "committee": "Small Business Committee",
+   "chamber": "House",
+   "bills": 401,
+   "pct_bipartisan": 56.9,
+   "pct_law_bipartisan": 2.63,
+   "pct_law_other": 0.0,
+   "pct_cleared_bipartisan": 41.23,
+   "pct_cleared_other": 2.31,
+   "bipartisan_bills": 228
+  }
+ ],
+ "states": [
+  {
+   "state": "AK",
+   "bills": 412,
+   "pct_bipartisan": 41.0,
+   "pct_law": 3.88,
+   "laws": 16
+  },
+  {
+   "state": "AL",
+   "bills": 344,
+   "pct_bipartisan": 29.9,
+   "pct_law": 1.74,
+   "laws": 6
+  },
+  {
+   "state": "AR",
+   "bills": 428,
+   "pct_bipartisan": 28.0,
+   "pct_law": 2.1,
+   "laws": 9
+  },
+  {
+   "state": "AS",
+   "bills": 13,
+   "pct_bipartisan": 30.8,
+   "pct_law": 7.69,
+   "laws": 1
+  },
+  {
+   "state": "AZ",
+   "bills": 1547,
+   "pct_bipartisan": 21.9,
+   "pct_law": 1.29,
+   "laws": 20
+  },
+  {
+   "state": "CA",
+   "bills": 4364,
+   "pct_bipartisan": 33.6,
+   "pct_law": 1.42,
+   "laws": 62
+  },
+  {
+   "state": "CO",
+   "bills": 957,
+   "pct_bipartisan": 46.4,
+   "pct_law": 1.46,
+   "laws": 14
+  },
+  {
+   "state": "CT",
+   "bills": 729,
+   "pct_bipartisan": 24.3,
+   "pct_law": 1.78,
+   "laws": 13
+  },
+  {
+   "state": "DC",
+   "bills": 290,
+   "pct_bipartisan": 2.8,
+   "pct_law": 0.34,
+   "laws": 1
+  },
+  {
+   "state": "DE",
+   "bills": 325,
+   "pct_bipartisan": 70.8,
+   "pct_law": 1.85,
+   "laws": 6
+  },
+  {
+   "state": "FL",
+   "bills": 2407,
+   "pct_bipartisan": 32.6,
+   "pct_law": 1.41,
+   "laws": 34
+  },
+  {
+   "state": "GA",
+   "bills": 892,
+   "pct_bipartisan": 34.9,
+   "pct_law": 2.69,
+   "laws": 24
+  },
+  {
+   "state": "GU",
+   "bills": 56,
+   "pct_bipartisan": 21.4,
+   "pct_law": 1.79,
+   "laws": 1
+  },
+  {
+   "state": "HI",
+   "bills": 483,
+   "pct_bipartisan": 31.3,
+   "pct_law": 1.45,
+   "laws": 7
+  },
+  {
+   "state": "IA",
+   "bills": 776,
+   "pct_bipartisan": 49.6,
+   "pct_law": 1.8,
+   "laws": 14
+  },
+  {
+   "state": "ID",
+   "bills": 204,
+   "pct_bipartisan": 33.3,
+   "pct_law": 0.98,
+   "laws": 2
+  },
+  {
+   "state": "IL",
+   "bills": 1967,
+   "pct_bipartisan": 33.9,
+   "pct_law": 1.32,
+   "laws": 26
+  },
+  {
+   "state": "IN",
+   "bills": 728,
+   "pct_bipartisan": 35.9,
+   "pct_law": 2.06,
+   "laws": 15
+  },
+  {
+   "state": "KS",
+   "bills": 430,
+   "pct_bipartisan": 38.6,
+   "pct_law": 2.79,
+   "laws": 12
+  },
+  {
+   "state": "KY",
+   "bills": 462,
+   "pct_bipartisan": 21.6,
+   "pct_law": 2.38,
+   "laws": 11
+  },
+  {
+   "state": "LA",
+   "bills": 678,
+   "pct_bipartisan": 35.1,
+   "pct_law": 2.51,
+   "laws": 17
+  },
+  {
+   "state": "MA",
+   "bills": 1106,
+   "pct_bipartisan": 24.1,
+   "pct_law": 0.9,
+   "laws": 10
+  },
+  {
+   "state": "MD",
+   "bills": 734,
+   "pct_bipartisan": 38.6,
+   "pct_law": 2.18,
+   "laws": 16
+  },
+  {
+   "state": "ME",
+   "bills": 249,
+   "pct_bipartisan": 71.9,
+   "pct_law": 1.61,
+   "laws": 4
+  },
+  {
+   "state": "MI",
+   "bills": 1300,
+   "pct_bipartisan": 51.8,
+   "pct_law": 4.15,
+   "laws": 54
+  },
+  {
+   "state": "MN",
+   "bills": 1034,
+   "pct_bipartisan": 44.1,
+   "pct_law": 1.45,
+   "laws": 15
+  },
+  {
+   "state": "MO",
+   "bills": 633,
+   "pct_bipartisan": 26.1,
+   "pct_law": 2.84,
+   "laws": 18
+  },
+  {
+   "state": "MP",
+   "bills": 65,
+   "pct_bipartisan": 66.2,
+   "pct_law": 1.54,
+   "laws": 1
+  },
+  {
+   "state": "MS",
+   "bills": 311,
+   "pct_bipartisan": 42.4,
+   "pct_law": 3.54,
+   "laws": 11
+  },
+  {
+   "state": "MT",
+   "bills": 462,
+   "pct_bipartisan": 41.8,
+   "pct_law": 3.25,
+   "laws": 15
+  },
+  {
+   "state": "NC",
+   "bills": 975,
+   "pct_bipartisan": 31.8,
+   "pct_law": 1.23,
+   "laws": 12
+  },
+  {
+   "state": "ND",
+   "bills": 151,
+   "pct_bipartisan": 48.3,
+   "pct_law": 1.32,
+   "laws": 2
+  },
+  {
+   "state": "NE",
+   "bills": 346,
+   "pct_bipartisan": 46.5,
+   "pct_law": 3.18,
+   "laws": 11
+  },
+  {
+   "state": "NH",
+   "bills": 588,
+   "pct_bipartisan": 66.3,
+   "pct_law": 1.7,
+   "laws": 10
+  },
+  {
+   "state": "NJ",
+   "bills": 1532,
+   "pct_bipartisan": 40.9,
+   "pct_law": 1.24,
+   "laws": 19
+  },
+  {
+   "state": "NM",
+   "bills": 578,
+   "pct_bipartisan": 34.3,
+   "pct_law": 1.56,
+   "laws": 9
+  },
+  {
+   "state": "NV",
+   "bills": 690,
+   "pct_bipartisan": 52.0,
+   "pct_law": 1.88,
+   "laws": 13
+  },
+  {
+   "state": "NY",
+   "bills": 2519,
+   "pct_bipartisan": 35.8,
+   "pct_law": 2.1,
+   "laws": 53
+  },
+  {
+   "state": "OH",
+   "bills": 1220,
+   "pct_bipartisan": 49.4,
+   "pct_law": 1.31,
+   "laws": 16
+  },
+  {
+   "state": "OK",
+   "bills": 434,
+   "pct_bipartisan": 35.3,
+   "pct_law": 1.61,
+   "laws": 7
+  },
+  {
+   "state": "OR",
+   "bills": 999,
+   "pct_bipartisan": 30.2,
+   "pct_law": 2.1,
+   "laws": 21
+  },
+  {
+   "state": "PA",
+   "bills": 1600,
+   "pct_bipartisan": 40.6,
+   "pct_law": 0.63,
+   "laws": 10
+  },
+  {
+   "state": "PR",
+   "bills": 119,
+   "pct_bipartisan": 60.5,
+   "pct_law": 0.84,
+   "laws": 1
+  },
+  {
+   "state": "RI",
+   "bills": 433,
+   "pct_bipartisan": 39.0,
+   "pct_law": 1.39,
+   "laws": 6
+  },
+  {
+   "state": "SC",
+   "bills": 595,
+   "pct_bipartisan": 36.8,
+   "pct_law": 1.68,
+   "laws": 10
+  },
+  {
+   "state": "SD",
+   "bills": 358,
+   "pct_bipartisan": 53.9,
+   "pct_law": 1.12,
+   "laws": 4
+  },
+  {
+   "state": "TN",
+   "bills": 816,
+   "pct_bipartisan": 27.9,
+   "pct_law": 1.35,
+   "laws": 11
+  },
+  {
+   "state": "TX",
+   "bills": 2660,
+   "pct_bipartisan": 31.4,
+   "pct_law": 2.07,
+   "laws": 55
+  },
+  {
+   "state": "UT",
+   "bills": 647,
+   "pct_bipartisan": 24.4,
+   "pct_law": 1.85,
+   "laws": 12
+  },
+  {
+   "state": "VA",
+   "bills": 1152,
+   "pct_bipartisan": 41.9,
+   "pct_law": 1.65,
+   "laws": 19
+  },
+  {
+   "state": "VI",
+   "bills": 71,
+   "pct_bipartisan": 32.4,
+   "pct_law": 0.0,
+   "laws": 0
+  },
+  {
+   "state": "VT",
+   "bills": 215,
+   "pct_bipartisan": 39.5,
+   "pct_law": 0.0,
+   "laws": 0
+  },
+  {
+   "state": "WA",
+   "bills": 874,
+   "pct_bipartisan": 40.5,
+   "pct_law": 1.49,
+   "laws": 13
+  },
+  {
+   "state": "WI",
+   "bills": 839,
+   "pct_bipartisan": 39.7,
+   "pct_law": 0.83,
+   "laws": 7
+  },
+  {
+   "state": "WV",
+   "bills": 375,
+   "pct_bipartisan": 57.9,
+   "pct_law": 1.07,
+   "laws": 4
+  },
+  {
+   "state": "WY",
+   "bills": 284,
+   "pct_bipartisan": 27.8,
+   "pct_law": 1.06,
+   "laws": 3
+  }
+ ],
+ "chamber_party": [
+  {
+   "chamber": "House",
+   "party": "D",
+   "coalition": "bipartisan",
+   "bills": 6308,
+   "pct_law": 2.79
+  },
+  {
+   "chamber": "House",
+   "party": "D",
+   "coalition": "same_party",
+   "bills": 5848,
+   "pct_law": 0.43
+  },
+  {
+   "chamber": "House",
+   "party": "D",
+   "coalition": "solo",
+   "bills": 4607,
+   "pct_law": 1.3
+  },
+  {
+   "chamber": "House",
+   "party": "R",
+   "coalition": "bipartisan",
+   "bills": 4045,
+   "pct_law": 2.72
+  },
+  {
+   "chamber": "House",
+   "party": "R",
+   "coalition": "same_party",
+   "bills": 4414,
+   "pct_law": 0.45
+  },
+  {
+   "chamber": "House",
+   "party": "R",
+   "coalition": "solo",
+   "bills": 4214,
+   "pct_law": 0.88
+  },
+  {
+   "chamber": "Senate",
+   "party": "D",
+   "coalition": "bipartisan",
+   "bills": 3691,
+   "pct_law": 3.77
+  },
+  {
+   "chamber": "Senate",
+   "party": "D",
+   "coalition": "same_party",
+   "bills": 3584,
+   "pct_law": 0.78
+  },
+  {
+   "chamber": "Senate",
+   "party": "D",
+   "coalition": "solo",
+   "bills": 1811,
+   "pct_law": 0.99
+  },
+  {
+   "chamber": "Senate",
+   "party": "R",
+   "coalition": "bipartisan",
+   "bills": 2729,
+   "pct_law": 4.87
+  },
+  {
+   "chamber": "Senate",
+   "party": "R",
+   "coalition": "same_party",
+   "bills": 2291,
+   "pct_law": 1.05
+  },
+  {
+   "chamber": "Senate",
+   "party": "R",
+   "coalition": "solo",
+   "bills": 1914,
+   "pct_law": 0.68
+  }
+ ],
+ "share_bipartisan_at_intro": [
+  {
+   "congress": 116,
+   "chamber": "House",
+   "bills": 9157,
+   "pct_bipartisan": 38.6
+  },
+  {
+   "congress": 116,
+   "chamber": "Senate",
+   "bills": 5102,
+   "pct_bipartisan": 41.3
+  },
+  {
+   "congress": 117,
+   "chamber": "House",
+   "bills": 9804,
+   "pct_bipartisan": 33.8
+  },
+  {
+   "congress": 117,
+   "chamber": "Senate",
+   "bills": 5362,
+   "pct_bipartisan": 39.3
+  },
+  {
+   "congress": 118,
+   "chamber": "House",
+   "bills": 10794,
+   "pct_bipartisan": 34.5
+  },
+  {
+   "congress": 118,
+   "chamber": "Senate",
+   "bills": 5644,
+   "pct_bipartisan": 39.3
+  },
+  {
+   "congress": 119,
+   "chamber": "House",
+   "bills": 11128,
+   "pct_bipartisan": 35.8
+  },
+  {
+   "congress": 119,
+   "chamber": "Senate",
+   "bills": 5805,
+   "pct_bipartisan": 39.6
+  }
+ ],
+ "companions": [
+  {
+   "coalition": "bipartisan",
+   "has_identical_companion": false,
+   "bills": 12293,
+   "pct_law": 2.72
+  },
+  {
+   "coalition": "bipartisan",
+   "has_identical_companion": true,
+   "bills": 4480,
+   "pct_law": 5.0
+  },
+  {
+   "coalition": "same_party",
+   "has_identical_companion": false,
+   "bills": 11893,
+   "pct_law": 0.55
+  },
+  {
+   "coalition": "same_party",
+   "has_identical_companion": true,
+   "bills": 4244,
+   "pct_law": 0.75
+  },
+  {
+   "coalition": "solo",
+   "has_identical_companion": false,
+   "bills": 10629,
+   "pct_law": 0.97
+  },
+  {
+   "coalition": "solo",
+   "has_identical_companion": true,
+   "bills": 1917,
+   "pct_law": 1.3
+  }
+ ],
+ "top_pairs": [
+  {
+   "member_a": "Rep. Gottheimer, Josh [D-NJ-5]",
+   "party_a": "D",
+   "member_b": "Rep. Lawler, Michael [R-NY-17]",
+   "party_b": "R",
+   "shared_bills": 121,
+   "shared_laws": 1
+  },
+  {
+   "member_a": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_a": "R",
+   "member_b": "Rep. Gottheimer, Josh [D-NJ-5]",
+   "party_b": "D",
+   "shared_bills": 113,
+   "shared_laws": 0
+  },
+  {
+   "member_a": "Sen. Collins, Susan M. [R-ME]",
+   "party_a": "R",
+   "member_b": "Sen. Shaheen, Jeanne [D-NH]",
+   "party_b": "D",
+   "shared_bills": 103,
+   "shared_laws": 6
+  },
+  {
+   "member_a": "Sen. Durbin, Richard J. [D-IL]",
+   "party_a": "D",
+   "member_b": "Sen. Grassley, Chuck [R-IA]",
+   "party_b": "R",
+   "shared_bills": 82,
+   "shared_laws": 4
+  },
+  {
+   "member_a": "Sen. Cornyn, John [R-TX]",
+   "party_a": "R",
+   "member_b": "Sen. Peters, Gary C. [D-MI]",
+   "party_b": "D",
+   "shared_bills": 81,
+   "shared_laws": 6
+  },
+  {
+   "member_a": "Sen. Cornyn, John [R-TX]",
+   "party_a": "R",
+   "member_b": "Sen. Coons, Christopher A. [D-DE]",
+   "party_b": "D",
+   "shared_bills": 79,
+   "shared_laws": 9
+  },
+  {
+   "member_a": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_a": "R",
+   "member_b": "Rep. Panetta, Jimmy [D-CA-20]",
+   "party_b": "D",
+   "shared_bills": 78,
+   "shared_laws": 2
+  },
+  {
+   "member_a": "Sen. Grassley, Chuck [R-IA]",
+   "party_a": "R",
+   "member_b": "Sen. Klobuchar, Amy [D-MN]",
+   "party_b": "D",
+   "shared_bills": 76,
+   "shared_laws": 4
+  },
+  {
+   "member_a": "Rep. Dingell, Debbie [D-MI-12]",
+   "party_a": "D",
+   "member_b": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_b": "R",
+   "shared_bills": 75,
+   "shared_laws": 0
+  },
+  {
+   "member_a": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_a": "R",
+   "member_b": "Rep. Neguse, Joe [D-CO-2]",
+   "party_b": "D",
+   "shared_bills": 75,
+   "shared_laws": 1
+  },
+  {
+   "member_a": "Sen. Cornyn, John [R-TX]",
+   "party_a": "R",
+   "member_b": "Sen. Hassan, Margaret Wood [D-NH]",
+   "party_b": "D",
+   "shared_bills": 75,
+   "shared_laws": 7
+  },
+  {
+   "member_a": "Sen. Moran, Jerry [R-KS]",
+   "party_a": "R",
+   "member_b": "Sen. Tester, Jon [D-MT]",
+   "party_b": "D",
+   "shared_bills": 74,
+   "shared_laws": 14
+  },
+  {
+   "member_a": "Rep. Bacon, Don [R-NE-2]",
+   "party_a": "R",
+   "member_b": "Rep. Gottheimer, Josh [D-NJ-5]",
+   "party_b": "D",
+   "shared_bills": 72,
+   "shared_laws": 0
+  },
+  {
+   "member_a": "Sen. Collins, Susan M. [R-ME]",
+   "party_a": "R",
+   "member_b": "Sen. Hassan, Margaret Wood [D-NH]",
+   "party_b": "D",
+   "shared_bills": 69,
+   "shared_laws": 3
+  },
+  {
+   "member_a": "Sen. Grassley, Chuck [R-IA]",
+   "party_a": "R",
+   "member_b": "Sen. Hassan, Margaret Wood [D-NH]",
+   "party_b": "D",
+   "shared_bills": 69,
+   "shared_laws": 4
+  },
+  {
+   "member_a": "Sen. Lankford, James [R-OK]",
+   "party_a": "R",
+   "member_b": "Sen. Peters, Gary C. [D-MI]",
+   "party_b": "D",
+   "shared_bills": 69,
+   "shared_laws": 6
+  },
+  {
+   "member_a": "Rep. Connolly, Gerald E. [D-VA-11]",
+   "party_a": "D",
+   "member_b": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_b": "R",
+   "shared_bills": 68,
+   "shared_laws": 3
+  },
+  {
+   "member_a": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_a": "R",
+   "member_b": "Rep. Pappas, Chris [D-NH-1]",
+   "party_b": "D",
+   "shared_bills": 66,
+   "shared_laws": 1
+  },
+  {
+   "member_a": "Rep. Fitzpatrick, Brian K. [R-PA-1]",
+   "party_a": "R",
+   "member_b": "Rep. Houlahan, Chrissy [D-PA-6]",
+   "party_b": "D",
+   "shared_bills": 65,
+   "shared_laws": 1
+  },
+  {
+   "member_a": "Sen. Portman, Rob [R-OH]",
+   "party_a": "R",
+   "member_b": "Sen. Peters, Gary C. [D-MI]",
+   "party_b": "D",
+   "shared_bills": 65,
+   "shared_laws": 12
+  }
+ ],
+ "field_counts": [
+  {
+   "coalition": "bipartisan",
+   "furthest": "cleared_committee",
+   "ceremonial": false,
+   "bills": 925
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "introduced",
+   "ceremonial": false,
+   "bills": 13978
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "introduced",
+   "ceremonial": true,
+   "bills": 71
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "law",
+   "ceremonial": false,
+   "bills": 558
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "law",
+   "ceremonial": true,
+   "bills": 134
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "passed_both",
+   "ceremonial": false,
+   "bills": 24
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "passed_one",
+   "ceremonial": false,
+   "bills": 1288
+  },
+  {
+   "coalition": "bipartisan",
+   "furthest": "passed_one",
+   "ceremonial": true,
+   "bills": 17
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "cleared_committee",
+   "ceremonial": false,
+   "bills": 23
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "introduced",
+   "ceremonial": false,
+   "bills": 255
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "law",
+   "ceremonial": false,
+   "bills": 1
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "passed_both",
+   "ceremonial": false,
+   "bills": 1
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "passed_one",
+   "ceremonial": false,
+   "bills": 3
+  },
+  {
+   "coalition": "other_sponsor",
+   "furthest": "passed_one",
+   "ceremonial": true,
+   "bills": 1
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "cleared_committee",
+   "ceremonial": false,
+   "bills": 381
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "cleared_committee",
+   "ceremonial": true,
+   "bills": 4
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "introduced",
+   "ceremonial": false,
+   "bills": 15286
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "introduced",
+   "ceremonial": true,
+   "bills": 57
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "law",
+   "ceremonial": false,
+   "bills": 97
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "law",
+   "ceremonial": true,
+   "bills": 39
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "passed_both",
+   "ceremonial": false,
+   "bills": 13
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "passed_one",
+   "ceremonial": false,
+   "bills": 360
+  },
+  {
+   "coalition": "same_party",
+   "furthest": "passed_one",
+   "ceremonial": true,
+   "bills": 11
+  },
+  {
+   "coalition": "solo",
+   "furthest": "cleared_committee",
+   "ceremonial": false,
+   "bills": 430
+  },
+  {
+   "coalition": "solo",
+   "furthest": "introduced",
+   "ceremonial": false,
+   "bills": 11642
+  },
+  {
+   "coalition": "solo",
+   "furthest": "introduced",
+   "ceremonial": true,
+   "bills": 42
+  },
+  {
+   "coalition": "solo",
+   "furthest": "law",
+   "ceremonial": false,
+   "bills": 128
+  },
+  {
+   "coalition": "solo",
+   "furthest": "law",
+   "ceremonial": true,
+   "bills": 26
+  },
+  {
+   "coalition": "solo",
+   "furthest": "passed_one",
+   "ceremonial": false,
+   "bills": 346
+  },
+  {
+   "coalition": "solo",
+   "furthest": "passed_one",
+   "ceremonial": true,
+   "bills": 6
+  }
+ ],
+ "twelve_years": {
+  "source": "Hosted release btb-v1-f692dfc32a8b62a838e76aaf (113th-118th), D or R sponsors, all bills including ceremonial. Bipartisan at introduction uses the same original-cosponsor rule; 116th-118th shares match this analysis exactly.",
+  "rows": [
+   {
+    "congress": 113,
+    "chamber": "House",
+    "bills": 6016,
+    "pct_bipartisan": 33.4,
+    "pct_law_bipartisan": 7.07,
+    "pct_law_other": 1.92
+   },
+   {
+    "congress": 113,
+    "chamber": "Senate",
+    "bills": 2991,
+    "pct_bipartisan": 34.9,
+    "pct_law_bipartisan": 4.41,
+    "pct_law_other": 1.49
+   },
+   {
+    "congress": 114,
+    "chamber": "House",
+    "bills": 6634,
+    "pct_bipartisan": 36.6,
+    "pct_law_bipartisan": 5.84,
+    "pct_law_other": 1.83
+   },
+   {
+    "congress": 114,
+    "chamber": "Senate",
+    "bills": 3535,
+    "pct_bipartisan": 36.7,
+    "pct_law_bipartisan": 6.32,
+    "pct_law_other": 1.25
+   },
+   {
+    "congress": 115,
+    "chamber": "House",
+    "bills": 7540,
+    "pct_bipartisan": 38.5,
+    "pct_law_bipartisan": 7.2,
+    "pct_law_other": 2.01
+   },
+   {
+    "congress": 115,
+    "chamber": "Senate",
+    "bills": 3821,
+    "pct_bipartisan": 43.4,
+    "pct_law_bipartisan": 6.58,
+    "pct_law_other": 1.48
+   },
+   {
+    "congress": 116,
+    "chamber": "House",
+    "bills": 9157,
+    "pct_bipartisan": 38.6,
+    "pct_law_bipartisan": 4.59,
+    "pct_law_other": 1.07
+   },
+   {
+    "congress": 116,
+    "chamber": "Senate",
+    "bills": 5102,
+    "pct_bipartisan": 41.3,
+    "pct_law_bipartisan": 4.36,
+    "pct_law_other": 1.0
+   },
+   {
+    "congress": 117,
+    "chamber": "House",
+    "bills": 9804,
+    "pct_bipartisan": 33.8,
+    "pct_law_bipartisan": 3.71,
+    "pct_law_other": 1.2
+   },
+   {
+    "congress": 117,
+    "chamber": "Senate",
+    "bills": 5362,
+    "pct_bipartisan": 39.3,
+    "pct_law_bipartisan": 5.61,
+    "pct_law_other": 1.41
+   },
+   {
+    "congress": 118,
+    "chamber": "House",
+    "bills": 10794,
+    "pct_bipartisan": 34.5,
+    "pct_law_bipartisan": 3.52,
+    "pct_law_other": 0.74
+   },
+   {
+    "congress": 118,
+    "chamber": "Senate",
+    "bills": 5644,
+    "pct_bipartisan": 39.3,
+    "pct_law_bipartisan": 2.98,
+    "pct_law_other": 0.7
+   }
+  ]
+ }
+}

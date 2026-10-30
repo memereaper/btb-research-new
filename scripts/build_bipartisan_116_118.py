@@ -22,8 +22,8 @@ MAJ = {(116, 'House'): 'D', (116, 'Senate'): 'R', (117, 'House'): 'D', (117, 'Se
 CHUNK = 8000
 
 
-def main():
-    c = duckdb.connect(str(DB), read_only=True)
+def setup(c):
+    """Temp table bp: one row per bill with coalition at introduction and furthest stage."""
     c.execute("CREATE TEMP TABLE maj(congress_n INT, chamber VARCHAR, party VARCHAR)")
     c.executemany("INSERT INTO maj VALUES (?,?,?)", [(k[0], k[1], v) for k, v in MAJ.items()])
     c.execute("""
@@ -65,6 +65,12 @@ def main():
     c.execute("""ALTER TABLE bp ADD COLUMN furthest VARCHAR; UPDATE bp SET furthest = CASE
         WHEN became_law THEN 'law' WHEN passed_both THEN 'passed_both' WHEN passed_one THEN 'passed_one'
         WHEN cleared_committee THEN 'cleared_committee' ELSE 'introduced' END""")
+
+
+
+def main():
+    c = duckdb.connect(str(DB), read_only=True)
+    setup(c)
 
     rate = lambda where: c.execute(f"""
       SELECT coalition_at_intro, count(*) bills,

@@ -1,0 +1,699 @@
+{
+ "name": "Between the Bills open legislative record",
+ "version": "6bfaabac06cf",
+ "pinned_commit": "6bfaabac06cfea8f0cc662ce4b2deb421d810bcf",
+ "congresses": "116th-119th (2019-present)",
+ "source": "Library of Congress Bill Status records, GovInfo bulk data",
+ "license": "U.S. government works; public domain. Credit Between the Bills and the Library of Congress.",
+ "total_rows": 1765337,
+ "tables": {
+  "bills": {
+   "description": "One row per bill or joint resolution: title, sponsor, dates, policy area, laws.",
+   "rows": 63173,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/bills.parquet",
+     "rows": 29582,
+     "bytes": 1986741
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/bills.parquet",
+     "rows": 33591,
+     "bytes": 2421461
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "congress",
+     "VARCHAR"
+    ],
+    [
+     "bill_type",
+     "VARCHAR"
+    ],
+    [
+     "bill_number",
+     "VARCHAR"
+    ],
+    [
+     "title",
+     "VARCHAR"
+    ],
+    [
+     "introduced_date",
+     "VARCHAR"
+    ],
+    [
+     "updated_at",
+     "VARCHAR"
+    ],
+    [
+     "updated_including_text",
+     "VARCHAR"
+    ],
+    [
+     "origin_chamber",
+     "VARCHAR"
+    ],
+    [
+     "policy_area",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_id",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_name",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_party",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_state",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_district",
+     "VARCHAR"
+    ],
+    [
+     "latest_action_date",
+     "VARCHAR"
+    ],
+    [
+     "latest_action_text",
+     "VARCHAR"
+    ],
+    [
+     "law_identifiers",
+     "VARCHAR"
+    ],
+    [
+     "congress_url",
+     "VARCHAR"
+    ],
+    [
+     "source_xml_url",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "actions": {
+   "description": "Every recorded action: date, Library of Congress code, text.",
+   "rows": 290617,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/actions.parquet",
+     "rows": 142568,
+     "bytes": 2566426
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/actions.parquet",
+     "rows": 148049,
+     "bytes": 2453306
+    }
+   ],
+   "columns": [
+    [
+     "action_id",
+     "VARCHAR"
+    ],
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "action_date",
+     "VARCHAR"
+    ],
+    [
+     "action_time",
+     "VARCHAR"
+    ],
+    [
+     "action_code",
+     "VARCHAR"
+    ],
+    [
+     "action_type",
+     "VARCHAR"
+    ],
+    [
+     "action_text",
+     "VARCHAR"
+    ],
+    [
+     "source_system",
+     "VARCHAR"
+    ],
+    [
+     "source_order",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "cosponsors": {
+   "description": "Every cosponsorship, with join and withdrawal dates and original-cosponsor flag.",
+   "rows": 680906,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/cosponsors.parquet",
+     "rows": 357680,
+     "bytes": 3358858
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/cosponsors.parquet",
+     "rows": 323226,
+     "bytes": 3351467
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "sponsor_id",
+     "VARCHAR"
+    ],
+    [
+     "member_name",
+     "VARCHAR"
+    ],
+    [
+     "party",
+     "VARCHAR"
+    ],
+    [
+     "state",
+     "VARCHAR"
+    ],
+    [
+     "district",
+     "VARCHAR"
+    ],
+    [
+     "joined_date",
+     "VARCHAR"
+    ],
+    [
+     "withdrawn_date",
+     "VARCHAR"
+    ],
+    [
+     "is_original",
+     "VARCHAR"
+    ],
+    [
+     "source_row",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "committees": {
+   "description": "Committee referrals per bill.",
+   "rows": 81501,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/committees.parquet",
+     "rows": 38657,
+     "bytes": 1215066
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/committees.parquet",
+     "rows": 42844,
+     "bytes": 1371364
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "committee_id",
+     "VARCHAR"
+    ],
+    [
+     "committee_name",
+     "VARCHAR"
+    ],
+    [
+     "chamber",
+     "VARCHAR"
+    ],
+    [
+     "committee_type",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "committee_events": {
+   "description": "Committee activity: referrals, hearings, markups, reports, discharges, with dates.",
+   "rows": 120879,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/committee_events.parquet",
+     "rows": 59127,
+     "bytes": 1562332
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/committee_events.parquet",
+     "rows": 61752,
+     "bytes": 1722664
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "committee_id",
+     "VARCHAR"
+    ],
+    [
+     "parent_committee_id",
+     "VARCHAR"
+    ],
+    [
+     "event_name",
+     "VARCHAR"
+    ],
+    [
+     "event_date",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "related_bills": {
+   "description": "Links between bills: identical, related, procedurally related.",
+   "rows": 58265,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/related_bills.parquet",
+     "rows": 32805,
+     "bytes": 939866
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/related_bills.parquet",
+     "rows": 25460,
+     "bytes": 854398
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "related_bill_id",
+     "VARCHAR"
+    ],
+    [
+     "relationship",
+     "VARCHAR"
+    ],
+    [
+     "identified_by",
+     "VARCHAR"
+    ],
+    [
+     "latest_action_date",
+     "VARCHAR"
+    ],
+    [
+     "latest_action_text",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "subjects": {
+   "description": "Library of Congress legislative subject terms per bill.",
+   "rows": 332232,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/subjects.parquet",
+     "rows": 243832,
+     "bytes": 1610784
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/subjects.parquet",
+     "rows": 88400,
+     "bytes": 933115
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "subject",
+     "VARCHAR"
+    ],
+    [
+     "updated_at",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "summaries": {
+   "description": "Congressional Research Service summaries (HTML) per bill version.",
+   "rows": 51179,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/summaries.parquet",
+     "rows": 34672,
+     "bytes": 7738285
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/summaries.parquet",
+     "rows": 16507,
+     "bytes": 2296615
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "action_date",
+     "VARCHAR"
+    ],
+    [
+     "action_description",
+     "VARCHAR"
+    ],
+    [
+     "version_code",
+     "VARCHAR"
+    ],
+    [
+     "updated_at",
+     "VARCHAR"
+    ],
+    [
+     "summary_html",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "text_versions": {
+   "description": "Published text versions with links.",
+   "rows": 77258,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/text_versions.parquet",
+     "rows": 36786,
+     "bytes": 1349096
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/text_versions.parquet",
+     "rows": 40472,
+     "bytes": 1508325
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "version_type",
+     "VARCHAR"
+    ],
+    [
+     "version_date",
+     "VARCHAR"
+    ],
+    [
+     "format_type",
+     "VARCHAR"
+    ],
+    [
+     "url",
+     "VARCHAR"
+    ],
+    [
+     "is_errata",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "cbo_estimates": {
+   "description": "Congressional Budget Office cost estimates.",
+   "rows": 5165,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/cbo_estimates.parquet",
+     "rows": 2465,
+     "bytes": 194387
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/cbo_estimates.parquet",
+     "rows": 2700,
+     "bytes": 218864
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "title",
+     "VARCHAR"
+    ],
+    [
+     "publication_date",
+     "VARCHAR"
+    ],
+    [
+     "url",
+     "VARCHAR"
+    ],
+    [
+     "description",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  },
+  "vote_references": {
+   "description": "Roll-call votes recorded on bill actions.",
+   "rows": 4162,
+   "files": [
+    {
+     "congresses": "116-117",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-116-117-2026-10-29/tables/vote_references.parquet",
+     "rows": 2133,
+     "bytes": 69810
+    },
+    {
+     "congresses": "118-119",
+     "url": "https://cdn.jsdelivr.net/gh/memereaper/btb-research-new@6bfaabac06cfea8f0cc662ce4b2deb421d810bcf/datasets/pathways-2026-10-28/tables/vote_references.parquet",
+     "rows": 2029,
+     "bytes": 66756
+    }
+   ],
+   "columns": [
+    [
+     "bill_id",
+     "VARCHAR"
+    ],
+    [
+     "action_id",
+     "VARCHAR"
+    ],
+    [
+     "chamber",
+     "VARCHAR"
+    ],
+    [
+     "congress",
+     "VARCHAR"
+    ],
+    [
+     "session",
+     "VARCHAR"
+    ],
+    [
+     "roll_number",
+     "VARCHAR"
+    ],
+    [
+     "vote_date",
+     "VARCHAR"
+    ],
+    [
+     "url",
+     "VARCHAR"
+    ],
+    [
+     "source_row",
+     "VARCHAR"
+    ],
+    [
+     "source_id",
+     "VARCHAR"
+    ],
+    [
+     "source_member",
+     "VARCHAR"
+    ],
+    [
+     "source_record_sha256",
+     "VARCHAR"
+    ]
+   ]
+  }
+ }
+}
