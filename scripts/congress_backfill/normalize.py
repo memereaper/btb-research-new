@@ -28,10 +28,17 @@ def bid(c, t, n): return f"{c}-{str(t).lower()}-{n}"
 def main():
     c, rawdir, out = int(sys.argv[1]), sys.argv[2], sys.argv[3]
     rows = {t: [] for t in SCHEMAS}; missing = 0; seen = set()
+    extras = {}
+    ep = os.path.join(rawdir, f"extra_{c}.jsonl")
+    if os.path.exists(ep):
+        for l in open(ep):
+            e = json.loads(l); extras.setdefault(e["key"], {}).update(e)
     for line in open(os.path.join(rawdir, f"raw_{c}.jsonl")):
         r = json.loads(line)
         if r["key"] in seen: continue
         seen.add(r["key"])
+        for k, v in extras.get(r["key"], {}).items():
+            if k not in ("key", "extra"): r[k] = v
         d = r.get("detail")
         if not d: missing += 1; continue
         b = bid(c, d["type"], d["number"])

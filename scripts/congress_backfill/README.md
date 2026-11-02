@@ -4,7 +4,7 @@ Extends the Hugging Face dataset `AbhayHarika/between-the-bills-congress` (folde
 with the same per-Congress parquet schemas. Existing rows are never modified; each Congress is a new file
 `<table>/congress_<N>.parquet`.
 
-1. `python3 fetch.py 107 /data/dir` — resumable raw snapshot `raw_107.jsonl` (one line per bill, appended only when all of its
+1. `python3 fetch.py 107 /data/dir` (core pass: detail, actions, cosponsors, committees, subjects), then `fetch.py 107 /data/dir --extra` (summaries, titles, text versions, related bills, amendments) — resumable raw snapshot `raw_107.jsonl` + `extra_107.jsonl` (one line per bill, appended only when complete; rerun to resume). Auth is proxy-injected (`X-Api-Key` for `*.congress.gov`); no key is handled here. Pacing: global 0.30 s gap (~12,000 requests/hour, below the 20,000 the API advertises), 8 threads, backoff on 429/5xx.
    endpoints are fetched, so the file is the checkpoint; rerun to resume). Auth is proxy-injected (`X-Api-Key` for `*.congress.gov`);
    no key is handled here. Pacing: global 0.75 s gap (<= 4,800 requests/hour), 4 worker threads, backoff on 429/5xx.
 2. `python3 normalize.py 107 /data/dir /out/dir` — builds the 11 bill tables (bills, actions, cosponsors, committees, subjects,
