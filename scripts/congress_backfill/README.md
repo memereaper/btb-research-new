@@ -18,3 +18,8 @@ Known differences vs the 108th+ GovInfo-derived tables (documented, not hidden):
 - cbo_estimates, committee_reports, recorded_votes are not produced (vote links stay in `actions.vote_*`).
 - Nothing before 1973 is collected: Congress.gov bill data starts at the 93rd Congress.
 - `cross_party` = cosponsor party differs from sponsor party (same definition as existing tables).
+
+## Update: faster two-pass mode
+Pacing is now a global 0.30 s gap (~12,000 requests/hour; the API advertises 20,000/hour) with 8 threads, superseding the numbers in step 1.
+Run `fetch.py N DIR` (core: detail, actions, cosponsors, committees, subjects), then `fetch.py N DIR --extra`
+(summaries, titles, text versions, related bills, amendments; writes `extra_N.jsonl`, merged by `normalize.py`).
