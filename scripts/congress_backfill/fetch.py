@@ -17,7 +17,7 @@ _lock = threading.Lock()
 WORKERS = 8
 STATS = {"requests": 0}
 
-def get(url, tries=6):
+def get(url, tries=4):
     if "format=json" not in url:
         url += ("&" if "?" in url else "?") + "format=json"
     for i in range(tries):
@@ -73,11 +73,14 @@ def fetch_bill(congress, b, endpoints=None):
             cnt = info.get("count", 0) if isinstance(info, dict) else (len(info) if info else 0)
             if cnt:
                 u = f"{BASE}/bill/{congress}/{b['type']}/{b['number']}/{path}"
-                if lk is None:  # subjects nest under 'subjects'
-                    dd = get(u + "?limit=250")
-                    rec[field] = (dd or {}).get("subjects", {})
-                else:
-                    rec[field] = pages(u, lk)
+                try:
+                    if lk is None:  # subjects nest under 'subjects'
+                        dd = get(u + "?limit=250")
+                        rec[field] = (dd or {}).get("subjects", {})
+                    else:
+                        rec[field] = pages(u, lk)
+                except RuntimeError as e:  # persistent source-side error: record, don't crash
+                    rec.setdefault("_errors", {})[field] = str(e)[:200]
     return rec
 
 def fetch_extra(congress, rec):
@@ -87,7 +90,9 @@ def fetch_extra(congress, rec):
     for field, (path, lk) in EXTRA.items():
         info = det.get(field)
         cnt = info.get("count", 0) if isinstance(info, dict) else (len(info) if info else 0)
-        if cnt: out[field] = pages(f"{BASE}/bill/{congress}/{t}/{n}/{path}", lk)
+        if cnt:
+            try: out[field] = pages(f"{BASE}/bill/{congress}/{t}/{n}/{path}", lk)
+            except RuntimeError as e: out.setdefault("_errors", {})[field] = str(e)[:200]
     return out
 
 def run_extra(congress, outdir, limit):
