@@ -17,7 +17,7 @@ _lock = threading.Lock()
 WORKERS = 8
 STATS = {"requests": 0}
 
-def get(url, tries=4):
+def get(url, tries=10):  # ~25 min of backoff tolerates short API outages
     if "format=json" not in url:
         url += ("&" if "?" in url else "?") + "format=json"
     for i in range(tries):
@@ -31,10 +31,10 @@ def get(url, tries=4):
         except urllib.error.HTTPError as e:
             if e.code == 404: return None
             if e.code in (429, 500, 502, 503, 504):
-                time.sleep(min(600, 5 * 2 ** i)); continue
+                time.sleep(min(300, 5 * 2 ** i)); continue
             raise
         except (urllib.error.URLError, TimeoutError, ConnectionError):
-            time.sleep(min(600, 5 * 2 ** i))
+            time.sleep(min(300, 5 * 2 ** i))
     raise RuntimeError("giving up on " + url)
 
 def pages(url, listkey):
