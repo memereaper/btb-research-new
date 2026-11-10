@@ -37,6 +37,12 @@ def main():
             print(r.commit_url); return
         except Exception as e:
             print("retry", i, str(e)[:120]); time.sleep(2 ** (i + 1))
+            # a 502 can arrive after the commit landed: do not re-commit if the manifest is already there
+            try:
+                if api.file_exists(REPO, f"sources/congress/backfill/manifest_{n}.json", repo_type="dataset"):
+                    print("commit already landed; not retrying"); return
+            except Exception:
+                pass
     sys.exit(1)
 
 if __name__ == "__main__":
