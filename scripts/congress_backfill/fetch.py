@@ -30,7 +30,7 @@ def get(url, tries=10):  # ~25 min of backoff tolerates short API outages
                 return json.load(r)
         except urllib.error.HTTPError as e:
             if e.code == 404: return None
-            if e.code in (429, 500, 502, 503, 504):
+            if e.code == 429 or e.code >= 500:  # incl. Cloudflare 52x
                 time.sleep(min(300, 5 * 2 ** i)); continue
             raise
         except (urllib.error.URLError, TimeoutError, ConnectionError):
