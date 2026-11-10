@@ -5,16 +5,16 @@ Usage: fetch.py CONGRESS OUTDIR [--limit N]
 Auth is proxy-injected (X-Api-Key); no key is read or sent here.
 Writes OUTDIR/raw_{congress}.jsonl: one line per bill = {key, fetched_at, detail, <endpoint>: [pages...]}.
 A bill line is appended only after all its endpoints are complete, so the file is the checkpoint.
-Rate limit: <=12000 requests/hour (0.30 s global spacing, 8 threads), exponential backoff on 429/5xx.
+Rate limit: <=18000 requests/hour (0.20 s global spacing, 10 threads), exponential backoff on 429/5xx.
 """
 import json, os, sys, time, threading, urllib.request, urllib.error, datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 BASE = "https://api.congress.gov/v3"
-MIN_GAP = 0.30  # ~12,000 requests/hour (API advertises 20,000/hour)
+MIN_GAP = 0.20  # ~18,000 requests/hour (API advertises 20,000/hour)
 _last = [0.0]
 _lock = threading.Lock()
-WORKERS = 8
+WORKERS = 10
 STATS = {"requests": 0}
 
 def get(url, tries=10):  # ~25 min of backoff tolerates short API outages
