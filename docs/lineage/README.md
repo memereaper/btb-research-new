@@ -31,3 +31,6 @@ Why this one: raw text is already public (usc-textversion), so the contribution 
 ## Collection started
 `scripts/lineage/collect_bill_text.py`: GovInfo bulk BILLS XML for Congresses 118, 117, 116, 115, 114, 113, 119 in that order, all 8 measure types, both sessions. Writes `bill_text_versions` and `bill_text_sections` parquet plus per-unit checkpoint JSON (zip sha256, counts, retrieval time). Safe to rerun; finished units are skipped. Uses govinfo.gov only, so it does not use the shared api.congress.gov hourly budget of the 1973-2002 backfill.
 Phase 2 (not started; needs coordination because it uses the Congress.gov API budget): text for the 101st-112th via the Congress.gov text endpoint.
+
+## Law provenance collection (added 2026-11-15)
+`scripts/lineage/collect_public_laws.py`: GovInfo PLAW bulk USLM XML, public laws of the 113th-119th. Checked counts match known totals for 113-118 (296, 329, 442, 344, 362, 274); 119th is partial (138 so far). One 118th law has approved_date 0001-01-01 in the source; kept as-is, flagged. Next: match law sections back to bill sections (exact hash, then shingle overlap), then benchmark review.
